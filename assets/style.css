@@ -1,0 +1,315 @@
+body{
+    margin: 0;
+    padding: 0;
+    font-family: 'Neuzeit Grotesk', Helvetica, sans-serif;
+    font-size: 16px;
+    line-height: 1.4;
+    z-index: -2000;
+    color: #707070;
+    height: calc(100% - 90px);
+    width: 100%;
+    position: absolute;
+    
+}
+.grille--open{
+    position: absolute;
+    width: 100%;
+    height: 7515px;
+    background-image: url('images/grille.png');
+    background-size: contain;
+    z-index: 100;
+    opacity: 0.6;
+    pointer-events: none;
+}
+.image__colonnes--gauche{
+    margin-bottom: 18px;
+    max-width: 350px;
+}
+.image__colonnes--droite{
+    margin-bottom: 26px;
+    margin-left: 26px;
+    max-width: 350px;
+}
+.image__colonnes--centre{
+    max-width: 376px;
+}
+.video{
+    margin: 26px 0px 52px 0px;
+}
+.texte__colonnes{
+    max-width: 350px;
+    font-size: 1.1250em;
+}
+.texte__colonnes--gauche{
+    margin-bottom: 13px;
+    max-width: 350px;
+    font-size: 1.1250em;
+}
+.texte__colonnes--droite{
+    margin-left: 26px;
+    max-width: 350px;
+    font-size: 1.1250em;
+}
+.texte__colonnes--centre{
+    max-width: 376px;
+    font-size: 1.1250em;
+}
+.bold{
+    font-weight: 600;
+}
+.texte__hyperlink{
+    text-decoration: none;
+    color: #2C51A9;
+}
+.texte__equipeprojet{
+    color: #FFFFFF;
+}
+.equipier__nom{
+    font-size: 28px;
+    color: #FFFFFF;
+}
+.title{
+    margin-left: 26px;
+    font-size: 1.601806641em;
+    font-weight: 600;
+    line-height: 1.05;
+    color: #2C51A9;
+}
+.title--big{
+    margin-top: 32px;
+    margin-left: 26px;
+    font-size: 3.6532em;
+    max-width: 295px;
+    margin-bottom: 12px;
+
+}
+.title--medium{
+    font-size: 2.2807em;
+    margin-right: 52px;
+    text-align: right;
+    margin-bottom: 16px;
+}
+.title--medium--fermeture{
+    font-size: 2.2807em;
+    color: #707070;
+    margin-left: 26px;
+}
+.title--medium span{
+    color: #707070;
+}
+.title--small{
+    font-size: 1.601806641em;
+    margin-bottom: 0px;
+    margin-top: 0;
+}
+.title--underline{
+    background-color: #2C51A9;
+    width: 1.5em;
+    height: 0.2em;
+    margin-bottom: 3px;
+}
+.reseaux{
+    display: flex;
+    flex-direction: row;
+    width: 120px;
+    justify-content: space-around;
+    list-style: none;
+    padding: 0;
+    height: 50px;
+    margin: 10px 0 22px 0;
+
+}
+.equipier__description{
+    color: #FFFFFF;
+    height: 126px;
+
+}
+
+.navcontainer{
+    top: 0;
+    height: 80px;
+    width: 100%;
+    position: fixed;
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 2px 12px;
+    background-color: #FFFFFF;
+
+}
+.menu{
+    z-index: 1000;
+    padding-left: 15px;
+    height: 80px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+}
+.menu__el svg{
+    scale: 65%;
+}
+.bgmenu__el{
+    color: #707070;
+}
+.bgmenu__el--h2--color{
+    color: #707070;
+}
+.bgmenu__el a{
+    text-decoration: none;
+    color: #2C51A9;
+}
+
+.bgmenu__el--h2{
+    color: #707070;
+    font-size: 25px;
+    font-weight: 600;
+    line-height: 60px;
+    padding: 15px 0px 0px 26px;
+}
+.bgmenu__el--h3{
+    font-size: 25px;
+    font-weight: 600;
+    line-height: 30px;
+    padding-left: 52px;
+}
+.bgmenu__nav{
+    z-index: -10;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    position: fixed;
+    top: 70px;
+    right: 0;
+    background-color: #FFFFFF;
+    width: 370px;
+    height: 100%;
+
+    left: 100%;
+    transition: all 0.3s cubic-bezier(0.12, 0, 0.39, 0);
+    transform:  translate(0) rotate(0);
+    pointer-events: none;
+}
+.menu--open {
+    transform: translateX(-100%);
+    transition: all 0.3s cubic-bezier(0.12, 0, 0.39, 0);
+    transform: translate(-100%) rotate(0);
+    pointer-events: none;
+}
+
+
+.menu__liste{
+    height: 80px;
+    width: 30%;
+    padding-right: 15px;
+    display: flex;
+    text-decoration: none;
+    list-style: none;
+    justify-content: space-between;
+    align-items: center;
+}
+.menu__logo{
+    max-height: 80px;
+    height: 80px;
+}
+
+.maincontainer{
+    z-index: -300;
+    top: 80px;
+    bottom: 0px;
+    display: flex;
+    flex-direction: column;
+    min-height: calc(100% - 90px);
+    position: relative;
+    margin: 0px 26px;
+}
+.footercontainer{
+    display: flex;
+    flex-direction: column;
+    background-color: #2C51A9;
+    height: 90px;
+    margin-top: 90px;
+    bottom: 0;
+    width: 100%;
+    position: relative;
+}
+.subNav{
+    padding: 0;
+    list-style: none;
+    text-decoration: none;
+    display: flex;
+    justify-content: space-around;
+}
+.subNav__el a{
+    text-decoration: none;
+    color: #FFFFFF;
+}
+.credits{
+    text-align: center;
+    color: #FFFFFF;
+    text-decoration: none;
+}
+.credits a{
+    text-decoration: none;
+    color: #FFFFFF;
+}
+.info--open{
+    display: none;
+}
+.section__equipier{
+    display: flex;
+    width: 322px;
+    height: 293px;
+    background-color: #2C51A9;
+    background-repeat: no-repeat;
+    background-position: right bottom;
+    padding: 15px;
+    margin-left: 26px;
+    margin-bottom: 26px;
+    flex-direction: column;
+    z-index: -10;
+}
+.section__equipier--kesily{
+    background-image: url("images/kesily@2x.png");
+    background-size: 60%;
+}
+.section__equipier--thibaud{
+    background-image: url("images/thibaud@2x.png");
+    background-size: 40%;
+}
+.section__equipier--mika{
+    background-image: url("images/mika@2x.png");
+    background-size: 40%;
+}
+.section__equipier--jonathan{
+    background-image: url("images/jonathan@2x.png");
+    background-size: 60%;
+}
+.section__equipier--information{
+    z-index: -150;
+    background: linear-gradient(90deg,#2C51A9,90%,rgba(255, 255, 255, 0));
+
+    flex-direction: column;
+    width: 322px;
+    height: 100%;
+    opacity: 0.8;
+}
+
+@media (min-width: 1200px){
+    .menu__liste{
+        width: 10%;
+    }
+    body{
+        font-size: 16px;
+    }
+
+    .title--small{
+        font-size: 2.4883em;
+    }
+    .title--medium{
+        font-size: 6.1917em;
+    }
+    .title--big{
+        font-size: 7.430083707em;
+        max-width: 706px;
+    }
+
+}
+
