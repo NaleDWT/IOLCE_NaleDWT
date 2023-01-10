@@ -1,8 +1,7 @@
 body{
     margin: 0;
     padding: 0;
-    font-family: 'Neuzeit Grotesk', Helvetica, sans-serif;
-    font-size: 16px;
+    font-family: 'niveau-grotesk', sans-serif;    font-size: 16px;
     line-height: 1.4;
     z-index: -2000;
     color: #707070;
@@ -11,18 +10,29 @@ body{
     position: absolute;
     
 }
+.maincontainer{
+    z-index: -300;
+    top: 80px;
+    bottom: 0px;
+    display: flex;
+    flex-direction: column;
+    min-height: calc(100% - 90px);
+    position: relative;
+    margin: 0px 26px;
+}
 .grille--open{
     position: absolute;
     width: 100%;
-    height: 7515px;
+    height: 7215px;
     background-image: url('images/grille.png');
-    background-size: contain;
+    background-size: 100%;
     z-index: 100;
     opacity: 0.6;
     pointer-events: none;
 }
 .image__colonnes--gauche{
-    margin-bottom: 18px;
+    margin-top: 0px;
+    margin-bottom: 0;
     max-width: 350px;
 }
 .image__colonnes--droite{
@@ -33,6 +43,21 @@ body{
 .image__colonnes--centre{
     max-width: 376px;
 }
+.webisdone{
+    margin-bottom: 16px;
+}
+.beforeCSS{
+    margin-bottom: 13px;
+}
+.firstbook{
+    margin-bottom: 15px;
+}
+.perceval{
+    margin-bottom: 18px;
+}
+.hobbit{
+    margin-bottom: 42px;
+}
 .video{
     margin: 26px 0px 52px 0px;
 }
@@ -41,18 +66,36 @@ body{
     font-size: 1.1250em;
 }
 .texte__colonnes--gauche{
-    margin-bottom: 13px;
+    margin-top: 10px;
+    margin-bottom: 18px;
     max-width: 350px;
     font-size: 1.1250em;
 }
+.texte__colonnes--gauche.doublep{
+    margin-top: 7px;
+}
+.texte__colonnes--droite.doublep{
+    margin-top: 7px;
+}
+.texte__colonnes--centre.doublep{
+    margin-top: 7px;
+}
+
 .texte__colonnes--droite{
     margin-left: 26px;
     max-width: 350px;
     font-size: 1.1250em;
+    margin-top: 10px;
+    margin-bottom: 18px;
+}
+.texte__colonnes--droite.first{
+    margin-top: 10px;
 }
 .texte__colonnes--centre{
     max-width: 376px;
     font-size: 1.1250em;
+    margin-top: 10px;
+    margin-bottom: 18px;
 }
 .bold{
     font-weight: 600;
@@ -76,37 +119,51 @@ body{
     color: #2C51A9;
 }
 .title--big{
-    margin-top: 32px;
+    margin-top: 20px;
     margin-left: 26px;
     font-size: 3.6532em;
     max-width: 295px;
+    max-height: 115px;
     margin-bottom: 12px;
-
 }
-.title--medium{
+.title--medium.first{
     font-size: 2.2807em;
     margin-right: 52px;
     text-align: right;
-    margin-bottom: 16px;
+    margin-top: 43px;
+    margin-bottom: 12px;
+}
+.title--medium.second{
+    font-size: 2.2807em;
+    margin-right: 52px;
+    text-align: right;
+    margin-top: 43px;
+    margin-bottom: 12px;
 }
 .title--medium--fermeture{
     font-size: 2.2807em;
     color: #707070;
     margin-left: 26px;
+    margin-bottom: 19px;
+    margin-top: 18px;
 }
 .title--medium span{
     color: #707070;
 }
 .title--small{
     font-size: 1.601806641em;
-    margin-bottom: 0px;
-    margin-top: 0;
+    margin-bottom: 0;
+    margin-top: 53px;
+}
+.title--small.first{    margin-bottom: 0;
+    margin-top: 10px;
 }
 .title--underline{
     background-color: #2C51A9;
     width: 1.5em;
     height: 0.2em;
-    margin-bottom: 3px;
+    margin-bottom: 1px;
+    margin-top: 10px;
 }
 .reseaux{
     display: flex;
@@ -136,7 +193,7 @@ body{
 }
 .menu{
     z-index: 1000;
-    padding-left: 15px;
+    padding: 0px 26px;
     height: 80px;
     display: flex;
     flex-direction: row;
@@ -196,29 +253,19 @@ body{
 
 
 .menu__liste{
-    height: 80px;
+    height: 35px;
     width: 30%;
-    padding-right: 15px;
     display: flex;
     text-decoration: none;
     list-style: none;
     justify-content: space-between;
-    align-items: center;
+    margin-top: 12px;
 }
 .menu__logo{
-    max-height: 80px;
-    height: 80px;
-}
-
-.maincontainer{
-    z-index: -300;
-    top: 80px;
-    bottom: 0px;
-    display: flex;
-    flex-direction: column;
-    min-height: calc(100% - 90px);
-    position: relative;
-    margin: 0px 26px;
+    margin-top: 18px;
+    margin-bottom: 0px;
+    max-height: 35px;
+    height: 35px;
 }
 .footercontainer{
     display: flex;
@@ -256,19 +303,20 @@ body{
 .section__equipier{
     display: flex;
     width: 322px;
-    height: 293px;
+    height: 296px;
     background-color: #2C51A9;
     background-repeat: no-repeat;
     background-position: right bottom;
     padding: 15px;
-    margin-left: 26px;
     margin-bottom: 26px;
     flex-direction: column;
     z-index: -10;
+    padding-bottom: 0;
 }
 .section__equipier--kesily{
     background-image: url("images/kesily@2x.png");
     background-size: 60%;
+    margin-top: 29px;
 }
 .section__equipier--thibaud{
     background-image: url("images/thibaud@2x.png");
@@ -288,7 +336,7 @@ body{
 
     flex-direction: column;
     width: 322px;
-    height: 100%;
+    height: 86.5%;
     opacity: 0.8;
 }
 
@@ -298,17 +346,57 @@ body{
     }
     body{
         font-size: 16px;
+        height: 100%;
+    }
+    .maincontainer{
+        margin: 0px 56px;
     }
 
     .title--small{
         font-size: 2.4883em;
     }
-    .title--medium{
+    .title--medium.second{
         font-size: 6.1917em;
+        margin-top: 113px;
+        margin-left: 1100px;
+        text-align: left;
+    }
+    .title--medium.first{
+        font-size: 6.1917em;
+        margin-top: 113px;
+        margin-left: 1100px;
+        text-align: left;
+    }
+    .title--medium--fermeture{
+        font-size: 6.1917em;
+        margin-left: 56px;
+        margin-bottom: 19px;
+        margin-top: 18px;
     }
     .title--big{
         font-size: 7.430083707em;
         max-width: 706px;
+        margin-left: 367px;
+        margin-top: 98px;
+    }
+    .grille--open{
+        position: absolute;
+        width: 100%;
+        bottom: 0;
+        top: 0;
+        background-image: url('images/grille--desktop.png');
+        background-repeat: repeat-yz;
+        background-size: 100%;
+        z-index: 100;
+        opacity: 0.6;
+        pointer-events: none;
+    }
+    .menu{
+        padding: 0px 56px;
+    }
+    .texte__colonnes--15desk{
+        font-size: 23px;
+        max-width: 540px;
     }
 
 }
