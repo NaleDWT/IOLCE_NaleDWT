@@ -40,41 +40,108 @@
     </nav>
 
     </header>
-    <div class="grille"></div>
+
+    <picture class="grille">
+        <source 
+                media="(max-width: 1199px)" 
+                srcset="assets/images/grille.png"
+                srcset="assets/images/grille@2x.png 2x">
+        <source 
+                media="(min-width: 1200px)" 
+                srcset="assets/images/grille--desktop.png">
+        <img class="grille__image" src="assets/images/grille--desktop.png">
+    </picture>
     <main class="maincontainer">
     
-    <h1 class="title title--big">In And Out Of&nbspStyle</h1>
+    <h1 class="title title--big">In&nbspAnd&nbspOut Of&nbspStyle</h1>
 
         <h2 class="title title--medium first">CSS<span>.Day {</span></h2>
 
             <h3 class="title title--small first">Un&nbspévènement&nbspsmart</h3>
             <div class="title title--underline" id="underline1"></div>
 
-                <p class="texte__colonnes--gauche first texte__colonnes--15desk">Le <a class="texte__hyperlink" href="https://cssday.nl/2022">CSS Day</a> présente une suite de conférences avec une ambiance informelle, qui compte de nombreuses pauses et qui cherche à favoriser le dialogue entre les intervenants et le public. L’événement voit le jour en 2013. Il s’agissait de conférences avancées sur le css.</p>
-                <p class="texte__colonnes--gauche doublep texte__colonnes--15desk">Par la suite, la conférence s’agrandit et des sessions de conceptions y sont ajoutées. Aujourd’hui la conférence se déroule sur deux jours et elle compte de nombreux participants parmi lesquels s’entremêlent des développeurs, des designers CSS ou encore des fournisseurs de navigateurs.</p>
-                <img class="image__colonnes--gauche webisdone" src="assets/images/website-is-done-meme.png" srcset="assets/images/website-is-done-meme@2x.png 2x" alt="Meme provenant de la série The Office qui dit &laquoSite web est fini ! Faux, un site web n’est jamais fini&raquo">
+            <section class="section h3--unevenementsmart">
+
+                    <div class="texte__bloc--desktop">
+                        <p class="texte__colonnes--gauche first texte__colonnes--15desk">Le <a class="texte__hyperlink" href="https://cssday.nl/2022">CSS Day</a> présente une suite de conférences avec une ambiance informelle, qui compte de nombreuses pauses et qui cherche à favoriser le dialogue entre les intervenants et le public. L’événement voit le jour en 2013. Il s’agissait de conférences avancées sur le css.</p>
+                        <p class="texte__colonnes--gauche doublep texte__colonnes--15desk">Par la suite, la conférence s’agrandit et des sessions de conceptions y sont ajoutées. Aujourd’hui la conférence se déroule sur deux jours et elle compte de nombreux participants parmi lesquels s’entremêlent des développeurs, des designers CSS ou encore des fournisseurs de navigateurs.</p>
+                    </div>
+                    <picture class="image__colonnes--gauche webisdone">
+                        <source 
+                                media="(max-width: 1199px)" 
+                                srcset="assets/images/website-is-done-meme.png"
+                                srcset="assets/images/website-is-done-meme@2x.png 2x">
+                        <source 
+                                media="(min-width: 1200px)" 
+                                srcset="assets/images/website-is-done-meme-desktop.png">
+                        <img src="assets/images/website-is-done-meme.png">
+                    </picture>
+
+            </section>
 
             <h3 class="title title--small">Édition 2022</h3>
             <div class="title title--underline" id="underline2"></div>
 
-                <p class="texte__colonnes--droite  first"><a class="texte__hyperlink" href="https://cssday.nl/2022/speakers">Quatorze intervenants</a> étaient invités cette année. Le premier jour a débuté par notre conférencier favori, <a class="texte__hyperlink" href="https://twitter.com/adactio?ref_src=twsrc%5Egoogle%7Ctwcamp%5Eserp%7Ctwgr%5Eauthor">Jeremy Keith</a>, succédé par la développeuse web <a class="texte__hyperlink" href="https://twitter.com/LeaVerou">Lea Verou</a> avec une impressionnante démonstration sur le CSS ou encore <a class="texte__hyperlink" href="https://twitter.com/theanaferreira">Ana Ferreira</a>, UX designer, qui a amené une approche humaine du travail à distance.</p>
-                <img class="image__colonnes--droite" src="assets/images/meme-simpson.png" srcset="assets/images/meme-simpson@2x.png 2x" alt="Meme comparant une image du CSS day avec des visiteurs assis devant un écran géant à moitié blanc et vert et l’intitulé CSS DAY et sa représentation façon simpson">
-                <p class="texte__colonnes--droite doublep">Le deuxième jour était rythmé par des conférenciers talentueux, comme <a class="texte__hyperlink" href="https://twitter.com/argyleink">Adam Argyle</a> qui démontre l’évolution des scrollbar mais aussi <a class="texte__hyperlink" href="https://twitter.com/ivorjetski">Ben Evans</a> avec son talent artistique en CSS. Un événement au même avenir que ce langage révolutionnaire.</p>
+            <section class="section h3--edition2022">
+
+                <div class="texte__bloc--desktop--droite">
+                    <p class="texte__colonnes--droite  first texte__colonnes--11desk"><a class="texte__hyperlink" href="https://cssday.nl/2022/speakers">Quatorze intervenants</a> étaient invités cette année. Le premier jour a débuté par notre conférencier favori, <a class="texte__hyperlink" href="https://twitter.com/adactio?ref_src=twsrc%5Egoogle%7Ctwcamp%5Eserp%7Ctwgr%5Eauthor">Jeremy Keith</a>, succédé par la développeuse web <a class="texte__hyperlink" href="https://twitter.com/LeaVerou">Lea Verou</a> avec une impressionnante démonstration sur le CSS ou encore <a class="texte__hyperlink" href="https://twitter.com/theanaferreira">Ana Ferreira</a>, UX designer, qui a amené une approche humaine du travail à distance.</p>
+                    <p class="texte__colonnes--droite doublep texte__colonnes--11desk" id="replacement__ordre">Le deuxième jour était rythmé par des conférenciers talentueux, comme <a class="texte__hyperlink" href="https://twitter.com/argyleink">Adam Argyle</a> qui démontre l’évolution des scrollbar mais aussi <a class="texte__hyperlink" href="https://twitter.com/ivorjetski">Ben Evans</a> avec son talent artistique en CSS. Un événement au même avenir que ce langage révolutionnaire.</p>
+                </div>
+                <picture class="image__colonnes--droite simpson">
+                    <source 
+                            media="(max-width: 1199px)" 
+                            srcset="assets/images/meme-simpson.png"
+                            srcset="assets/images/meme-simpson@2x.png 2x">
+                    <source 
+                            media="(min-width: 1200px)" 
+                            srcset="assets/images/meme-simpson-desktop.png">
+                    <img src="assets/images/meme-simpson.png" alt="Meme comparant une image du CSS day avec des visiteurs assis devant un écran géant à moitié blanc et vert et l’intitulé CSS DAY et sa représentation façon simpson">
+                </picture>
+
+            </section>
 
             <h3 class="title title--small">La conférence</h3>
             <div class="title title--underline" id="underline3"></div>
             
-                <p class="texte__colonnes--gauche first">La «&#8239;<a class="texte__hyperlink" href="https://culturemath.ens.fr/thematiques/probabilites/qu-est-ce-que-la-theorie-de-l-information">théorie de l’information</a>&#8239;» de Shannon et le «&#8239;<a class="texte__hyperlink" href="https://www.igi-global.com/dictionary/context-sharing/101687">sharing context</a>&#8239;» structure et conceptualisent ce qu’on peut notamment trouver sur internet, deux notions importantes du web selon Jeremy. Il nous raconte le début du web design, se faisant directement dans l’HTML. Plusieurs propositions de “stylesheet” font leur apparition au début des années 90, le CSS apparaît ensuite en 1995. Le css peut-être simple, il n’est pas facile pour autant.</p>
-                <img class="image__colonnes--gauche beforeCSS" src="assets/images/beforeCSS.png" srcset="assets/images/beforeCSS@2x.png 2x" alt="Meme comparant une personne sans lunettes de soleil interprète comme l’HTML et une personne qui en porte interprète comme l’ HTML + le CSS">
-                <p class="texte__colonnes--gauche doublep">Par la suite, d’anciens “hacks” nous sont présentés. Détourner des outils pour la mise en page, des combines qui montrent l’évolution et la nécessité de l’être pour le CSS, ce qui introduit  au fait que de nouveau format de CSS sont apparus. Une grande question se pose toujours, qu’est ce qu’il manque encore au CSS ? Les gens chercheront une autre façon de coder qui sera plus accessible.</p>
-                <p class="texte__colonnes--gauche doublep">En conclusion, Jeremy nous explique que rien est inévitable, l’avenir est créé des actions faites aujourd’hui, il faut donc prendre les bonnes décisions afin d’assurer l’avenir qu’on souhaite avoir.</p>
+                <section class="section h3--laconference">
+
+                    <div class="texte__bloc--desktop--droite">
+                        <p class="texte__colonnes--gauche first texte__colonnes--11desk">La «&#8239;<a class="texte__hyperlink" href="https://culturemath.ens.fr/thematiques/probabilites/qu-est-ce-que-la-theorie-de-l-information">théorie de l’information</a>&#8239;» de Shannon et le «&#8239;<a class="texte__hyperlink" href="https://www.igi-global.com/dictionary/context-sharing/101687">sharing context</a>&#8239;» structure et conceptualisent ce qu’on peut notamment trouver sur internet, deux notions importantes du web selon Jeremy. Il nous raconte le début du web design, se faisant directement dans l’HTML. Plusieurs propositions de “stylesheet” font leur apparition au début des années 90, le CSS apparaît ensuite en 1995. Le css peut-être simple, il n’est pas facile pour autant.</p>
+                        <p class="texte__colonnes--gauche doublep texte__colonnes--11desk" id="replacement__ordre--2">Par la suite, d’anciens “hacks” nous sont présentés. Détourner des outils pour la mise en page, des combines qui montrent l’évolution et la nécessité de l’être pour le CSS, ce qui introduit  au fait que de nouveau format de CSS sont apparus. Une grande question se pose toujours, qu’est ce qu’il manque encore au CSS ? Les gens chercheront une autre façon de coder qui sera plus accessible.</p>
+                        <p class="texte__colonnes--gauche doublep bold texte__colonnes--11desk" id="replacement__ordre--2">En conclusion, Jeremy nous explique que rien est inévitable, l’avenir est créé des actions faites aujourd’hui, il faut donc prendre les bonnes décisions afin d’assurer l’avenir qu’on souhaite avoir.</p>
+                    </div>
+                    <picture class="image__colonnes--gauche beforeCSS">
+                        <source 
+                                media="(max-width: 1199px)" 
+                                srcset="assets/images/beforeCSS.png"
+                                srcset="assets/images/beforeCSS@2x.png 2">
+                        <source 
+                                media="(min-width: 1200px)" 
+                                srcset="assets/images/beforeCSS-desktop.png">
+                        <img src="assets/images/beforeCSS.png" alt="Meme comparant une personne sans lunettes de soleil interprète comme l’HTML et une personne qui en porte interprète comme l’ HTML + le CSS">
+                    </picture>
+
+                </section>
 
             <h3 class="title title--small">Une vraie âme d’artiste</h3>
             <div class="title title--underline" id="underline4"></div>
 
-                <p class="texte__colonnes--droite first bold texte__colonnes--15desk">Jeremy Keith est un développeur web, conférencier, musicien et écrivain britannique. Né à Londres en 1971, il fait ses études au collège des arts et design en Irlande. En 2005 il publie son premier livre <a class="texte__hyperlink" href="https://domscripting.com/book/">Dom Scripting</a> et sortira par la suite <a class="texte__hyperlink" href="http://writeprofessionally.org/web-design-2016/files/2014/09/html5-for-web-designers.pdf">HTML5</a> for web designers.</p>
-                <img class="image__colonnes--gauche firstbook" src="assets/images/first-book.png" srcset="assets/images/first-book@2x.png 2x" alt="Photo de Jeremy Keith tenant son premier livre (un livre blanc avec pour titre &laquo;ça c’est mon livre&raquo;">
-                <p class="texte__colonnes--gauche doublep">La même année, avec <a class="texte__hyperlink" href="https://twitter.com/clagnut?lang=fr">Richard Rutte</a>, ils confondent <a class="texte__hyperlink" href="https://clearleft.com/">Clearleft</a> et l’annoncent au cours de leur toute première <a class="texte__hyperlink" href="https://clearleft.com/thinking/our-last-year-at-sxswij ">conférence SXSW</a>. Ce personnage est un homme avec une philosophie de vie très honorable, il vit dans le partage de connaissance, prône une vie sans artifices. Sa boîte est un bon exemple de cette philosophie, elle montre qu’il n’y a pas pas nécessaire de se situer dans de grandes villes reconnues pour faire du résultat. Également <a class="texte__hyperlink" href="https://www.youtube.com/watch?v=YnMLTs8UFk0&list=PLgaHsrPMLcFCTp30gZV5WvjQ76lTDt-lW">musicien</a>, il crée son premier site web pour un groupe allemand dans lequel il jouait en 1997. Réel passionné, il aborde ses conférences d’un point de vue historique et nous rappelle le passé pour nous pousser à la vision du futur.</p>
+                <section class="h3--amedartiste">
+
+                    <p class="texte__colonnes--droite first bold texte__colonnes--15desk">Jeremy Keith est un développeur web, conférencier, musicien et écrivain britannique. Né à Londres en 1971, il fait ses études au collège des arts et design en Irlande. En 2005 il publie son premier livre <a class="texte__hyperlink" href="https://domscripting.com/book/">Dom Scripting</a> et sortira par la suite <a class="texte__hyperlink" href="http://writeprofessionally.org/web-design-2016/files/2014/09/html5-for-web-designers.pdf">HTML5</a> for web designers.</p>
+                    <p class="texte__colonnes--gauche doublep">La même année, avec <a class="texte__hyperlink" href="https://twitter.com/clagnut?lang=fr">Richard Rutte</a>, ils confondent <a class="texte__hyperlink" href="https://clearleft.com/">Clearleft</a> et l’annoncent au cours de leur toute première <a class="texte__hyperlink" href="https://clearleft.com/thinking/our-last-year-at-sxswij ">conférence SXSW</a>. Ce personnage est un homme avec une philosophie de vie très honorable, il vit dans le partage de connaissance, prône une vie sans artifices. Sa boîte est un bon exemple de cette philosophie, elle montre qu’il n’y a pas pas nécessaire de se situer dans de grandes villes reconnues pour faire du résultat. Également <a class="texte__hyperlink" href="https://www.youtube.com/watch?v=YnMLTs8UFk0&list=PLgaHsrPMLcFCTp30gZV5WvjQ76lTDt-lW">musicien</a>, il crée son premier site web pour un groupe allemand dans lequel il jouait en 1997. Réel passionné, il aborde ses conférences d’un point de vue historique et nous rappelle le passé pour nous pousser à la vision du futur.</p>
+                    <picture class="image__colonnes--gauche firstbook">
+                        <source 
+                                media="(max-width: 1199px)" 
+                                srcset="assets/images/first-book.png"
+                                srcset="assets/images/first-book@2x.png 2">
+                        <source 
+                                media="(min-width: 1200px)" 
+                                srcset="assets/images/first-book-desktop.png">
+                        <img src="assets/images/first-book-desktop.png" alt="Photo de Jeremy Keith tenant son premier livre (un livre blanc avec pour titre &laquo;ça c’est mon livre&raquo;">
+                    </picture>
+                </section>
 
         <span class="title title--medium--fermeture">}</span>
 

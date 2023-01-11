@@ -20,35 +20,56 @@ body{
     position: relative;
     margin: 0px 26px;
 }
-.grille--open{
-    position: absolute;
+.grille__image{
     width: 100%;
-    height: 7215px;
-    background-image: url('images/grille.png');
-    background-size: 100%;
+    height: auto;
+}
+.grille{
+    display: none;
+}
+.grille--open{
+    display: block;
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    bottom: 0;
+    top: 0;
+    left: 0;
     z-index: 100;
     opacity: 0.6;
     pointer-events: none;
 }
+
 .image__colonnes--gauche{
     margin-top: 0px;
     margin-bottom: 0;
     max-width: 350px;
 }
 .image__colonnes--droite{
-    margin-bottom: 26px;
+    margin-bottom: 22px;
     margin-left: 26px;
     max-width: 350px;
 }
 .image__colonnes--centre{
     max-width: 376px;
 }
-.webisdone{
-    margin-bottom: 16px;
+.h3--edition2022{
+    display: flex;
+    flex-direction: column;
+}
+.simpson img{
+    width: 100%;
+    height: auto;
+}
+.webisdone img{
+    margin-bottom: 28px;
+    width: 100%;
+    height: auto;
 }
 .beforeCSS{
     margin-bottom: 13px;
 }
+
 .firstbook{
     margin-bottom: 15px;
 }
@@ -72,10 +93,10 @@ body{
     font-size: 1.1250em;
 }
 .texte__colonnes--gauche.doublep{
-    margin-top: 7px;
+    margin-top: 6.8%;
 }
 .texte__colonnes--droite.doublep{
-    margin-top: 7px;
+    margin-top: 6.8%;
 }
 .texte__colonnes--centre.doublep{
     margin-top: 7px;
@@ -99,6 +120,9 @@ body{
 }
 .bold{
     font-weight: 600;
+}
+.texte__bloc--desktop{
+    display: block;
 }
 .texte__hyperlink{
     text-decoration: none;
@@ -344,59 +368,159 @@ body{
     .menu__liste{
         width: 10%;
     }
+
     body{
         font-size: 16px;
         height: 100%;
+        max-width: 100%;
+        line-height: 1.21739;
     }
     .maincontainer{
-        margin: 0px 56px;
+        margin: 0px 2.92%;
+        max-width: 100%;
     }
 
+    .title--small.first{
+        margin-top: 2.6%;
+    }
     .title--small{
         font-size: 2.4883em;
+        margin-left: 12.5%;
+        margin-top: 6.9%;
+    }
+    .title--underline{
+        margin-left: 12.5%;
+        margin-bottom: 0.2%;
     }
     .title--medium.second{
         font-size: 6.1917em;
         margin-top: 113px;
-        margin-left: 1100px;
+        margin-left: 57.2%;
         text-align: left;
     }
     .title--medium.first{
         font-size: 6.1917em;
-        margin-top: 113px;
-        margin-left: 1100px;
+        margin-top: 6.2%;
+        margin-left: 60.9%;
         text-align: left;
     }
     .title--medium--fermeture{
         font-size: 6.1917em;
-        margin-left: 56px;
+        margin-left: 2.92%;
         margin-bottom: 19px;
         margin-top: 18px;
     }
     .title--big{
         font-size: 7.430083707em;
-        max-width: 706px;
-        margin-left: 367px;
-        margin-top: 98px;
+        max-width: 65.4vh;
+        margin-left: 20.28%;
+        /*margin-left: 367px;*/
+        margin-top: 3.8%;
+    }
+
+    .grille__image{
+        width: 100%;
+        height: auto;
+    }
+    .grille{
+        display: none;
     }
     .grille--open{
+        display: block;
         position: absolute;
+        height: 100%;
         width: 100%;
         bottom: 0;
         top: 0;
-        background-image: url('images/grille--desktop.png');
-        background-repeat: repeat-yz;
-        background-size: 100%;
+        left: 0;
         z-index: 100;
         opacity: 0.6;
         pointer-events: none;
     }
     .menu{
-        padding: 0px 56px;
+        padding: 0px 2.92%;
     }
     .texte__colonnes--15desk{
+        font-size: 1.44em;
+        max-width: 68.8%;
+    }
+
+    .doublep.texte__colonnes--15desk{
+        margin-top: 5%;
+    }
+    .h3--unevenementsmart{
+        display: flex;
+    }
+    .texte__bloc--desktop p{
+        max-width: 100%;
+        margin-right: 0;
+    }
+    .texte__bloc--desktop {
+        margin-top: 3%;
+        margin-left: 20.2%;
+        max-width: 29.8%;
+    }
+    .webisdone {
+        margin-left: 10.9%;
+        width: 100%;
+    }
+    .webisdone img {
+        width: auto;
+        height: auto;
+    }
+    .h3--edition2022{
+        width: 100%;
+        flex-direction: row;
+    }
+    #replacement__ordre{
+        order: 1;
+    }
+    .texte__bloc--desktop--droite{
+        margin-top: 3.2%;
+        order: 2;
+    }
+    .simpson{
+        margin-top: 60px;
+        margin-left: 14%;
+        margin-bottom: 1.5%;
+    }
+    .simpson img{
+        width: auto;
+    }
+    .image__colonnes--gauche{
+        width: 120%;
+    }
+    .texte__colonnes--11desk{
         font-size: 23px;
-        max-width: 540px;
+        max-width: 35%;
+    }
+    .h3--edition2022 .texte__colonnes--11desk{
+        margin-left: 41.4%;
+        margin-top: 0.5%;
+        margin-bottom: 2.2%;
+    }
+    .h3--laconference .texte__colonnes--11desk{
+        margin: 0;
+        margin-top: 26px;
+        margin-left: 49.5%;
+    }
+    .h3--laconference .first.texte__colonnes--11desk{
+        margin-top: 4px;
+    }
+    .h3--laconference{
+        display: flex;
+        justify-content: space-around;
+    }
+    .h3--laconference .texte__bloc--desktop--droite{
+        margin-bottom: 1.4%;
+    }
+    .beforeCSS{
+        margin-top: 58px;
+        margin-left: 15.6%;
+        margin-bottom: 1.5%;
+    }
+    .beforeCSS img{
+        width: auto;
     }
 
 }
