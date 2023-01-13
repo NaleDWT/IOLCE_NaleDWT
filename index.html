@@ -95,7 +95,8 @@
                             srcset="assets/images/meme-simpson@2x.png 2x">
                     <source 
                             media="(min-width: 1200px)" 
-                            srcset="assets/images/meme-simpson-desktop.png">
+                            srcset="assets/images/meme-simpson-desktop.png"
+                            srcset="assets/images/meme-simpson-desktop@2x.png 2x">
                     <img src="assets/images/meme-simpson.png" alt="Meme comparant une image du CSS day avec des visiteurs assis devant un écran géant à moitié blanc et vert et l’intitulé CSS DAY et sa représentation façon simpson">
                 </picture>
 
@@ -128,9 +129,9 @@
             <div class="title title--underline" id="underline4"></div>
 
                 <section class="h3--amedartiste">
-
-                    <p class="texte__colonnes--droite first bold texte__colonnes--15desk">Jeremy Keith est un développeur web, conférencier, musicien et écrivain britannique. Né à Londres en 1971, il fait ses études au collège des arts et design en Irlande. En 2005 il publie son premier livre <a class="texte__hyperlink" href="https://domscripting.com/book/">Dom Scripting</a> et sortira par la suite <a class="texte__hyperlink" href="http://writeprofessionally.org/web-design-2016/files/2014/09/html5-for-web-designers.pdf">HTML5</a> for web designers.</p>
-                    <p class="texte__colonnes--gauche doublep">La même année, avec <a class="texte__hyperlink" href="https://twitter.com/clagnut?lang=fr">Richard Rutte</a>, ils confondent <a class="texte__hyperlink" href="https://clearleft.com/">Clearleft</a> et l’annoncent au cours de leur toute première <a class="texte__hyperlink" href="https://clearleft.com/thinking/our-last-year-at-sxswij ">conférence SXSW</a>. Ce personnage est un homme avec une philosophie de vie très honorable, il vit dans le partage de connaissance, prône une vie sans artifices. Sa boîte est un bon exemple de cette philosophie, elle montre qu’il n’y a pas pas nécessaire de se situer dans de grandes villes reconnues pour faire du résultat. Également <a class="texte__hyperlink" href="https://www.youtube.com/watch?v=YnMLTs8UFk0&list=PLgaHsrPMLcFCTp30gZV5WvjQ76lTDt-lW">musicien</a>, il crée son premier site web pour un groupe allemand dans lequel il jouait en 1997. Réel passionné, il aborde ses conférences d’un point de vue historique et nous rappelle le passé pour nous pousser à la vision du futur.</p>
+                    <div class="texte__bloc--desktop">
+                        <p class="texte__colonnes--droite first bold texte__colonnes--15desk">Jeremy Keith est un développeur web, conférencier, musicien et écrivain britannique. Né à Londres en 1971, il fait ses études au collège des arts et design en Irlande. En 2005 il publie son premier livre <a class="texte__hyperlink" href="https://domscripting.com/book/">Dom Scripting</a> et sortira par la suite <a class="texte__hyperlink" href="http://writeprofessionally.org/web-design-2016/files/2014/09/html5-for-web-designers.pdf">HTML5</a> for web designers.</p>
+                    
                     <picture class="image__colonnes--gauche firstbook">
                         <source 
                                 media="(max-width: 1199px)" 
@@ -141,6 +142,9 @@
                                 srcset="assets/images/first-book-desktop.png">
                         <img src="assets/images/first-book-desktop.png" alt="Photo de Jeremy Keith tenant son premier livre (un livre blanc avec pour titre &laquo;ça c’est mon livre&raquo;">
                     </picture>
+                    </div>
+                    <p class="texte__colonnes--gauche doublep texte__colonnes--11desk">La même année, avec <a class="texte__hyperlink" href="https://twitter.com/clagnut?lang=fr">Richard Rutte</a>, ils confondent <a class="texte__hyperlink" href="https://clearleft.com/">Clearleft</a> et l’annoncent au cours de leur toute première <a class="texte__hyperlink" href="https://clearleft.com/thinking/our-last-year-at-sxswij ">conférence SXSW</a>. Ce personnage est un homme avec une philosophie de vie très honorable, il vit dans le partage de connaissance, prône une vie sans artifices. Sa boîte est un bon exemple de cette philosophie, elle montre qu’il n’y a pas pas nécessaire de se situer dans de grandes villes reconnues pour faire du résultat. Également <a class="texte__hyperlink" href="https://www.youtube.com/watch?v=YnMLTs8UFk0&list=PLgaHsrPMLcFCTp30gZV5WvjQ76lTDt-lW">musicien</a>, il crée son premier site web pour un groupe allemand dans lequel il jouait en 1997. Réel passionné, il aborde ses conférences d’un point de vue historique et nous rappelle le passé pour nous pousser à la vision du futur.</p>
+
                 </section>
 
         <span class="title title--medium--fermeture">}</span>
@@ -150,29 +154,85 @@
             <h3 class="title title--small first">Ma&nbspvision&nbspdes&nbspconférences</h3>
             <div class="title title--underline" id="underline5"></div>
 
-                <p class="texte__colonnes--centre first bold">Les conférences, n’étant pas un format que j’affectionnais réellement ou auquel je m’étais intéressé, m’ont d’abord laissé légèrement réticent à l’idée de les visionner.</p>
-                <img class="image__colonnes--centre perceval" src="assets/images/percevalraclette.png" srcset="assets/images/percevalraclette@2x.png 2x" alt="Perceval de la série Kaamelott qui dit &laquo;J'voudrais pas faire ma raclette, mais la réunion s'annonce pas super&raquo;">
-                <p class="texte__colonnes--droite doublep">À la lecture de cette première d’une longue série, j’ai acquis un nombre de connaissances supérieur à ce que j’aurais pu lire sur internet en l’espace du même temps. Une heure a donc suffi à changer ma vision de ce mot “conférence“. Jeremy Keith n’y est évidemment pas pour rien, il a su capter mon attention dès le début de sa présentation en abordant la théorie de l’information de Shannon. Une représentation qui résume efficacement les parties fondamentales de l’information, l’émetteur, le signal, le récepteur et inévitablement le bruit. Internet se résume un peu de cette façon pour moi avec cet ensemble de signaux qui circulent constamment.</p>
+            <section class="h3--mavision">
+                <div class="texte__bloc--desktop">
+                <p class="texte__colonnes--centre first bold texte__colonnes--11desk">Les conférences, n’étant pas un format que j’affectionnais réellement ou auquel je m’étais intéressé, m’ont d’abord laissé légèrement réticent à l’idée de les visionner.</p>
+                <picture class="image__colonnes--centre perceval">
+                    <source 
+                            media="(max-width: 1199px)" 
+                            srcset="assets/images/percevalraclette.png"
+                            srcset="assets/images/percevalraclette@2x.png 2x">
+                    <source 
+                            media="(min-width: 1200px)" 
+                            srcset="assets/images/percevalraclette-desktop.png">
+                    <img src="assets/images/percevalraclette-desktop.png" alt="Perceval de la série Kaamelott qui dit &laquo;J'voudrais pas faire ma raclette, mais la réunion s'annonce pas super&raquo;">
+                </picture>
+                </div>
+                <p class="texte__colonnes--droite doublep texte__colonnes--25desk">À la lecture de cette première d’une longue série, j’ai acquis un nombre de connaissances supérieur à ce que j’aurais pu lire sur internet en l’espace du même temps. Une heure a donc suffi à changer ma vision de ce mot “conférence“. Jeremy Keith n’y est évidemment pas pour rien, il a su capter mon attention dès le début de sa présentation en abordant la théorie de l’information de Shannon. Une représentation qui résume efficacement les parties fondamentales de l’information, l’émetteur, le signal, le récepteur et inévitablement le bruit. Internet se résume un peu de cette façon pour moi avec cet ensemble de signaux qui circulent constamment.</p>
+            </section>
 
             <h3 class="title title--small">Mon premier ressenti</h3>
             <div class="title title--underline" id="underline6"></div>
 
-                <p class="texte__colonnes--gauche texte__colonnes--15desk">La passion avec laquelle Jeremy parle donnait plus de vie à ses propos, dans sa première partie sur les débuts du World Wide Web mais également dans la seconde, vraiment destinée au CSS. Parlons d’ailleurs de ce langage qui, à priori, me faisait peur également. Jeremy nous démontre certaines anciennes pratiques avant que celui-ci n’existe, ainsi qu’une multitude de propositions de “stylesheet” élaborées par des adeptes souhaitant des moyens plus simples pour créer le design de leurs pages web. C’est en expliquant les points forts mais aussi les points faibles de ces propositions qu’il a pu me faire comprendre comment ce langage était né mais aussi ses buts fondamentaux.</p>
-                <p class="texte__colonnes--gauche doublep bold">Cette phrase qu’il dit &laquo;Le CSS est simple mais le CSS n’est pas facile&raquo; résume bien l’idée de celui-ci.</p> 
-                <img class="image__colonnes--gauche hobbit" src="assets/images/memehobbit.png" srcset="assets/images/memehobbit@2x.png 2x" alt="Exemple de syntaxe CSS : Selector{property;value} celles-ci remplacées par un hobbit, sa taille et sa mesure réduite">  
-                
+            <section class="h3--monressenti">
+
+                <div class="texte__bloc--desktop">
+                <p class="texte__colonnes--gauche texte__colonnes--20desk">La passion avec laquelle Jeremy parle donnait plus de vie à ses propos, dans sa première partie sur les débuts du World Wide Web mais également dans la seconde, vraiment destinée au CSS. Parlons d’ailleurs de ce langage qui, à priori, me faisait peur également. Jeremy nous démontre certaines anciennes pratiques avant que celui-ci n’existe, ainsi qu’une multitude de propositions de “stylesheet” élaborées par des adeptes souhaitant des moyens plus simples pour créer le design de leurs pages web. C’est en expliquant les points forts mais aussi les points faibles de ces propositions qu’il a pu me faire comprendre comment ce langage était né mais aussi ses buts fondamentaux.</p>
+                <p class="texte__colonnes--gauche doublep bold texte__colonnes--11desk">Cette phrase qu’il dit &laquo;Le CSS est simple mais le CSS n’est pas facile&raquo; résume bien l’idée de celui-ci.</p> 
+                </div>
+                <picture class="image__colonnes--gauche hobbit">
+                    <source 
+                            media="(max-width: 1199px)" 
+                            srcset="assets/images/memehobbit.png"
+                            srcset="assets/images/memehobbit@2x.png 2x">
+                    <source 
+                            media="(min-width: 1200px)" 
+                            srcset="assets/images/memehobbit-desktop.png">
+                    <img src="assets/images/memehobbit.png" alt="Exemple de syntaxe CSS : Selector{property;value} celles-ci remplacées par un hobbit, sa taille et sa mesure réduite">  
+                </picture>
+            </section>
+
             <h3 class="title title--small">Une&nbspnouvelle&nbspgénération&nbsp?</h3>
             <div class="title title--underline" id="underline7"></div>
 
-                <p class="texte__colonnes--droite">J’ai pris conscience durant cette conférence, que je faisais partie d’une génération qui a tout entre ses mains. Nous avons plus de ressources que l’avaient nos aînés, pour faire un travail correct et dans les grandes règles. Par là, j’entends que la plupart des problèmes qu’ils ont rencontré à l’époque dans ce domaine sont déjà résolu; les “hacks” avec des gifs transparents, des tableaux ne sont plus nécessaire car le CSS est apparu et a même encore évolué du temps où les “floats” étaient utilisés. Je prends conscience qu’arriver dans le domaine et que les flexbox existent déjà est une aubaine.</p>
-                <p class="texte__colonnes--droite doublep">Je prends conscience qu’arriver dans le domaine et que les flexbox existent déjà est une aubaine.</p>
-                <img class="image__colonnes--droite" src="assets/images/vitemartymonte.png" srcset="assets/images/vitemartymonte@2x.png 2x" alt="Doc de &laquo;Retour Vers Le Futur&raquo; qui dit à Marty &laquo;vite marty, monte ! ici les flexbox n'éxistent pas&raquo;">  
+            <section class="h3--nouvgen">
+
+                <div class="texte__bloc--desktop">
+                <p class="texte__colonnes--droite texte__colonnes--20desk">J’ai pris conscience durant cette conférence, que je faisais partie d’une génération qui a tout entre ses mains. Nous avons plus de ressources que l’avaient nos aînés, pour faire un travail correct et dans les grandes règles. Par là, j’entends que la plupart des problèmes qu’ils ont rencontré à l’époque dans ce domaine sont déjà résolu; les “hacks” avec des gifs transparents, des tableaux ne sont plus nécessaire car le CSS est apparu et a même encore évolué du temps où les “floats” étaient utilisés. Je prends conscience qu’arriver dans le domaine et que les flexbox existent déjà est une aubaine.</p>
+                <p class="texte__colonnes--droite doublep bold texte__colonnes--11desk">Je prends conscience qu’arriver dans le domaine et que les flexbox existent déjà est une aubaine.</p>
+                </div>
+                <picture class="image__colonnes--droite marty">
+                    <source 
+                            media="(max-width: 1199px)" 
+                            srcset="assets/images/vitemartymonte.png"
+                            srcset="assets/images/vitemartymonte@2x.png 2x">
+                    <source 
+                            media="(min-width: 1200px)" 
+                            srcset="assets/images/vitemartymonte-desktop.png">
+                    <img src="assets/images/vitemartymonte-desktop.png" alt="Doc de &laquo;Retour Vers Le Futur&raquo; qui dit à Marty &laquo;vite marty, monte ! ici les flexbox n'éxistent pas&raquo;">  
+                </picture>
+            </section>
 
             <h3 class="title title--small">Les&nbspchoses à&nbspbien&nbspretenir</h3>
             <div class="title title--underline" id="underline8"></div>
-                <p class="texte__colonnes--gauche">Durant ce qui s’apparente à une conclusion de cette conférence Jeremy Keith insiste sur le fait que nos préoccupations se tournent trop vers ici et maintenant. Tout comme nos prédécesseurs l’ont été pour nous offrir ce monde du web actuel, nous sommes l’avenir de ce monde et selon lui, nous devons nous tourner vers le passé pour pouvoir nous tourner vers notre futur. </p>
-                <img class="image__colonnes--gauche" src="assets/images/avenirfnf.png" srcset="assets/images/avenirfnf@2x.png 2x" alt="Deux voitures de &laquo;Fast And Furious 7&raquo; séparent leur chemin avec ppour intitulé &laquo;Nos cerveaux tout frais et le bagage de nos aînés&raquo;">  
-                <p class="texte__colonnes--gauche doublep bold">Des propos captivants tenus par un personnage encore plus intéressant sur des sujets qui feront partie à part entière de ma vie. Voilà ce que je retiens de “In And Out Of Style“.</p>
+
+            <section class="h3--aretenir">
+                <div class="texte__bloc--desktop">
+                <p class="texte__colonnes--gauche texte__colonnes--10desk">Durant ce qui s’apparente à une conclusion de cette conférence Jeremy Keith insiste sur le fait que nos préoccupations se tournent trop vers ici et maintenant. Tout comme nos prédécesseurs l’ont été pour nous offrir ce monde du web actuel, nous sommes l’avenir de ce monde et selon lui, nous devons nous tourner vers le passé pour pouvoir nous tourner vers notre futur. </p>
+                <picture class="image__colonnes--gauche futur">
+                    <source 
+                            media="(max-width: 1199px)" 
+                            srcset="assets/images/avenirfnf.png"
+                            srcset="assets/images/avenirfnf@2x.png 2x">
+                    <source 
+                            media="(min-width: 1200px)" 
+                            srcset="assets/images/avenirfnf-desktop.png">
+                    <img src="assets/images/avenirfnf-desktop.png" alt="Deux voitures de &laquo;Fast And Furious 7&raquo; séparent leur chemin avec ppour intitulé &laquo;Nos cerveaux tout frais et le bagage de nos aînés&raquo;">  
+                </picture>
+                </div>
+                <p class="texte__colonnes--gauche doublep bold texte__colonnes--11desk">Des propos captivants tenus par un personnage encore plus intéressant sur des sujets qui feront partie à part entière de ma vie. Voilà ce que je retiens de “In And Out Of Style“.</p>
+
+            </section>
 
         <span class="title title--medium--fermeture">}</span>
         </main>

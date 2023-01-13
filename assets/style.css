@@ -57,6 +57,19 @@ body{
     display: flex;
     flex-direction: column;
 }
+.h3--laconference{
+    display: flex;
+    flex-direction: column;
+    margin: 0 0 20px 0;
+}
+.h3--amedartiste{
+    display: flex;
+    flex-direction: column;
+}
+.h3--monressenti{
+    display: flex;
+    flex-direction: column;
+}
 .simpson img{
     width: 100%;
     height: auto;
@@ -70,14 +83,14 @@ body{
     margin-bottom: 13px;
 }
 
-.firstbook{
-    margin-bottom: 15px;
+.firstbook img{
+    margin-bottom: 17px;
 }
-.perceval{
-    margin-bottom: 18px;
+.perceval img{
+    margin-bottom: 14px;
 }
 .hobbit{
-    margin-bottom: 42px;
+    margin-bottom: 11px;
 }
 .video{
     margin: 26px 0px 52px 0px;
@@ -95,6 +108,7 @@ body{
 .texte__colonnes--gauche.doublep{
     margin-top: 6.8%;
 }
+
 .texte__colonnes--droite.doublep{
     margin-top: 6.8%;
 }
@@ -381,12 +395,12 @@ body{
     }
 
     .title--small.first{
-        margin-top: 2.6%;
+        margin-top: 20px;
     }
     .title--small{
         font-size: 2.4883em;
         margin-left: 12.5%;
-        margin-top: 6.9%;
+        margin-top: 135px;
     }
     .title--underline{
         margin-left: 12.5%;
@@ -400,27 +414,28 @@ body{
     }
     .title--medium.first{
         font-size: 6.1917em;
-        margin-top: 6.2%;
+        margin-top: 113px;
         margin-left: 60.9%;
         text-align: left;
     }
     .title--medium--fermeture{
         font-size: 6.1917em;
         margin-left: 2.92%;
-        margin-bottom: 19px;
-        margin-top: 18px;
+        margin-bottom: 82px;
+        margin-top: 13px;
     }
     .title--big{
         font-size: 7.430083707em;
         max-width: 65.4vh;
         margin-left: 20.28%;
         /*margin-left: 367px;*/
-        margin-top: 3.8%;
+        /*margin-top: 3.8%;*/
+        margin-top: 70px;
     }
 
     .grille__image{
         width: 100%;
-        height: auto;
+        height: 8728px;
     }
     .grille{
         display: none;
@@ -446,7 +461,7 @@ body{
     }
 
     .doublep.texte__colonnes--15desk{
-        margin-top: 5%;
+        margin-top: 28px;
     }
     .h3--unevenementsmart{
         display: flex;
@@ -456,17 +471,17 @@ body{
         margin-right: 0;
     }
     .texte__bloc--desktop {
-        margin-top: 3%;
+        margin-top: 54px;
         margin-left: 20.2%;
         max-width: 29.8%;
     }
     .webisdone {
         margin-left: 10.9%;
-        width: 100%;
     }
     .webisdone img {
-        width: auto;
-        height: auto;
+        /*00width: 152%;*/
+        width: 27.8vw;
+        margin-bottom: 26px;
     }
     .h3--edition2022{
         width: 100%;
@@ -476,40 +491,45 @@ body{
         order: 1;
     }
     .texte__bloc--desktop--droite{
-        margin-top: 3.2%;
+        margin-top: 57px;
         order: 2;
+        height: 50%;
     }
     .simpson{
-        margin-top: 60px;
+        margin-top: 56px;
         margin-left: 14%;
-        margin-bottom: 1.5%;
+        margin-bottom: 0.9%;
     }
     .simpson img{
-        width: auto;
-    }
-    .image__colonnes--gauche{
-        width: 120%;
+        width: 262%;
     }
     .texte__colonnes--11desk{
         font-size: 23px;
         max-width: 35%;
     }
     .h3--edition2022 .texte__colonnes--11desk{
-        margin-left: 41.4%;
-        margin-top: 0.5%;
-        margin-bottom: 2.2%;
+        margin-left: 43.6%;
+        margin-bottom: 26px;
+    }
+    .h3--edition2022 .texte__colonnes--droite{
+        margin-top: 8px;
     }
     .h3--laconference .texte__colonnes--11desk{
         margin: 0;
         margin-top: 26px;
         margin-left: 49.5%;
+        margin-right: 20%;
     }
     .h3--laconference .first.texte__colonnes--11desk{
-        margin-top: 4px;
+        margin-top: 8px;
+    }
+    .h3--laconference .bold.texte__colonnes--11desk{
+        margin-top: 28px;
     }
     .h3--laconference{
         display: flex;
-        justify-content: space-around;
+        flex-direction: row;
+        margin: 0 0 25px 0;
     }
     .h3--laconference .texte__bloc--desktop--droite{
         margin-bottom: 1.4%;
@@ -520,8 +540,153 @@ body{
         margin-bottom: 1.5%;
     }
     .beforeCSS img{
-        width: auto;
+        width: 332%;
     }
+
+    .h3--amedartiste{
+        display: flex;
+        justify-content: flex-end;
+        flex-direction: row-reverse;
+        margin: 0 0 0 0;
+        width: 100%;
+    }
+    .h3--amedartiste .bold.texte__colonnes--15desk{
+        margin: 6px 0 22px 0;
+        width: 200%;
+    }
+    .h3--amedartiste .texte__colonnes--11desk{
+        margin: 204px 0 0 20.3%;
+        max-width: 23.5%;
+    }
+    .h3--amedartiste .texte__bloc--desktop{
+        margin: 0 0 0 6.2%;
+    }
+    .firstbook img{
+        width: 38vw;
+        margin: 0;
+    }
+    .h3--mavision{
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        margin-bottom: 21px;
+    }
+    .h3--mavision .texte__bloc--desktop{
+        display: flex;
+        max-width: 100%;
+        margin-left: 15.45%;
+        margin-top: 56px;
+        margin-bottom: 0;
+    }
+    .h3--mavision .texte__colonnes--11desk{
+        margin: 0;
+        max-width: 28%;
+        font-size: 40px;
+        line-height: 1.15;
+    }
+    .perceval{
+        margin: 0 0 0 1.75%;
+    }
+    .perceval img{
+        width: 36.5vw;
+    }
+    .h3--mavision .texte__colonnes--25desk{
+        margin: 48px 0 0 29.65%;
+        max-width: 50%;
+        font-size: 1.44em;
+    }
+    .h3--monressenti{
+        display: flex;
+        flex-direction: row;
+        margin-bottom: 19px;
+    }
+    .h3--monressenti .texte__bloc--desktop{
+        max-width: 39.2%;
+        display: flex;
+        flex-direction: column;
+        margin-top: 26px;
+    }
+    .h3--monressenti .texte__colonnes--20desk{
+        max-width: 100%;
+        font-size: 1.44em;
+    }
+    .hobbit{
+        margin: 29px 0 0 1.5%;
+    }
+    .hobbit img{
+        width: 27.7vw;
+
+    }
+    .h3--monressenti .texte__colonnes--11desk{
+        margin: 22px 0 0 0;
+        max-width: 76%;
+        font-size: 40px;
+        line-height: 1.15;
+        align-self: flex-end;
+    }
+    .h3--nouvgen{
+        display: flex;
+        flex-direction: row-reverse;
+        justify-content: flex-end;
+        margin-bottom: 19px;
+        width: 100%;
+        margin-top: 58px;
+    }
+    .marty{
+        margin: 0 0 0 15.5%;
+    }
+    .marty img{
+        width: 38vw;
+    }
+    .h3--nouvgen .texte__colonnes--20desk{
+        max-width: 100%;
+        font-size: 1.44em;
+        margin: 29px 0 0 0;
+    }
+    .h3--nouvgen .texte__colonnes--11desk{
+        margin: 0 0 0 0;
+        max-width: 76%;
+        font-size: 40px;
+        line-height: 1.15;
+        align-self: flex-end;
+    }
+    .h3--nouvgen .texte__bloc--desktop{
+        display: flex;
+        flex-direction: column-reverse;
+        margin-left: 25.85%;
+        margin-top: 0;
+        width: 100%;
+    }
+    .h3--aretenir{
+        display: flex;
+        flex-direction: column-reverse;
+        width: 100%;
+    }
+    .h3--aretenir .texte__bloc--desktop{
+        display: flex;
+        flex-direction: row-reverse;
+        width: 100%;
+        max-width: 59.4%;
+        margin-top: 50px;
+    }
+    .h3--aretenir .texte__colonnes--11desk{
+        margin: 50px 0 0 20.3%;
+        font-size: 40px;
+        line-height: 1.15;
+        max-width: 50%;
+    }
+    .h3--aretenir .texte__colonnes--10desk{
+        font-size: 1.44em;
+        margin-left: 35.5%;
+        margin-top: 5px;
+    }
+    .futur{
+        margin: 0 0 0 0.2%
+    }
+    .futur img{
+        width: 33.5vw;
+    }
+    
 
 }
 
