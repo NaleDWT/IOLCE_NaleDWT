@@ -18,11 +18,12 @@ body{
     flex-direction: column;
     min-height: calc(100% - 90px);
     position: relative;
-    margin: 0px 26px;
+    margin: 0 6%;
+    width: calc(100% - 26px);
 }
 .grille__image{
     width: 100%;
-    height: auto;
+    height: 10383.8px;
 }
 .grille{
     display: none;
@@ -47,20 +48,26 @@ body{
 }
 .image__colonnes--droite{
     margin-bottom: 22px;
-    margin-left: 26px;
+    margin-left: 6.8%;
     max-width: 350px;
 }
 .image__colonnes--centre{
     max-width: 376px;
 }
+.h3--unevenementsmart{
+    margin-bottom: 27px;
+}
+
 .h3--edition2022{
     display: flex;
     flex-direction: column;
+    max-height: 678px;
+    margin-bottom: 6px;
 }
 .h3--laconference{
     display: flex;
     flex-direction: column;
-    margin: 0 0 20px 0;
+    margin: 0 0 12px 0;
 }
 .h3--amedartiste{
     display: flex;
@@ -70,27 +77,43 @@ body{
     display: flex;
     flex-direction: column;
 }
+.h3--nouvgen{
+    margin-bottom: 45px;
+}
+.futur img{
+    margin: 0 0 21px 0;
+    width: 93.5%;
+}
 .simpson img{
-    width: 100%;
+    width: 93.5%;
     height: auto;
 }
 .webisdone img{
-    margin-bottom: 28px;
-    width: 100%;
     height: auto;
+    width: 93.5%;
 }
+
 .beforeCSS{
     margin-bottom: 13px;
 }
+.beforeCSS img{
+    width: 94%;
+}
 
 .firstbook img{
-    margin-bottom: 17px;
+    margin-bottom: 31px;
+    width: 93.5%;
 }
 .perceval img{
-    margin-bottom: 14px;
+    margin-bottom: 20px;
+    width: 93.5%;
 }
 .hobbit{
     margin-bottom: 11px;
+    width: 93.5%;
+}
+.marty img{
+    width: 87%;
 }
 .video{
     margin: 26px 0px 52px 0px;
@@ -102,23 +125,26 @@ body{
 .texte__colonnes--gauche{
     margin-top: 10px;
     margin-bottom: 18px;
-    max-width: 350px;
+    max-width: 86.5%;
     font-size: 1.1250em;
 }
 .texte__colonnes--gauche.doublep{
-    margin-top: 6.8%;
+    margin-top: 24px;
 }
 
 .texte__colonnes--droite.doublep{
     margin-top: 6.8%;
+}
+.texte__colonnes--droite.doublep.bold{
+    margin-top: 6.5%;
 }
 .texte__colonnes--centre.doublep{
     margin-top: 7px;
 }
 
 .texte__colonnes--droite{
-    margin-left: 26px;
-    max-width: 350px;
+    margin-left: 6.8%;
+    max-width: 86.5%;
     font-size: 1.1250em;
     margin-top: 10px;
     margin-bottom: 18px;
@@ -127,7 +153,7 @@ body{
     margin-top: 10px;
 }
 .texte__colonnes--centre{
-    max-width: 376px;
+    max-width: 94%;
     font-size: 1.1250em;
     margin-top: 10px;
     margin-bottom: 18px;
@@ -377,6 +403,9 @@ body{
     height: 86.5%;
     opacity: 0.8;
 }
+@media (min-width: 600px) {
+
+}
 
 @media (min-width: 1200px){
     .menu__liste{
@@ -391,7 +420,7 @@ body{
     }
     .maincontainer{
         margin: 0px 2.92%;
-        max-width: 100%;
+        max-width: 97.08%;
     }
 
     .title--small.first{
@@ -409,25 +438,25 @@ body{
     .title--medium.second{
         font-size: 6.1917em;
         margin-top: 113px;
-        margin-left: 57.2%;
-        text-align: left;
+        margin-right: 12.1%;
+        text-align: end;
     }
     .title--medium.first{
         font-size: 6.1917em;
         margin-top: 113px;
-        margin-left: 60.9%;
-        text-align: left;
+        margin-right: 12.1%;
+        text-align: end;
     }
     .title--medium--fermeture{
         font-size: 6.1917em;
         margin-left: 2.92%;
-        margin-bottom: 82px;
+        margin-bottom: 80px;
         margin-top: 13px;
     }
     .title--big{
         font-size: 7.430083707em;
-        max-width: 65.4vh;
-        margin-left: 20.28%;
+        max-width: 64.8vh;
+        margin-left: 19.8%;
         /*margin-left: 367px;*/
         /*margin-top: 3.8%;*/
         margin-top: 70px;
@@ -455,28 +484,34 @@ body{
     .menu{
         padding: 0px 2.92%;
     }
+    .texte__colonnes--gauche{
+        margin: 0;
+    }
+
     .texte__colonnes--15desk{
         font-size: 1.44em;
-        max-width: 68.8%;
+        width: 90%;
     }
 
     .doublep.texte__colonnes--15desk{
         margin-top: 28px;
     }
+
     .h3--unevenementsmart{
         display: flex;
+        margin: 0;
     }
     .texte__bloc--desktop p{
         max-width: 100%;
         margin-right: 0;
     }
     .texte__bloc--desktop {
-        margin-top: 54px;
-        margin-left: 20.2%;
-        max-width: 29.8%;
+        margin-top: 35px;
+        margin-left: 19.7%;
+        max-width: 32%;
     }
     .webisdone {
-        margin-left: 10.9%;
+        margin-left: 7.4%;
     }
     .webisdone img {
         /*00width: 152%;*/
@@ -486,6 +521,7 @@ body{
     .h3--edition2022{
         width: 100%;
         flex-direction: row;
+        margin: 0;
     }
     #replacement__ordre{
         order: 1;
@@ -493,22 +529,27 @@ body{
     .texte__bloc--desktop--droite{
         margin-top: 57px;
         order: 2;
-        height: 50%;
     }
     .simpson{
         margin-top: 56px;
-        margin-left: 14%;
-        margin-bottom: 0.9%;
+        margin-left: 13.4%;
+        margin-bottom: 18px;
     }
     .simpson img{
         width: 262%;
     }
     .texte__colonnes--11desk{
         font-size: 23px;
-        max-width: 35%;
+        max-width: 32.5%;
+    }
+    .texte__colonnes--droite.doublep.bold{
+        margin-top: 0;
+    }
+    .h3--edition2022{
+        margin-bottom: 5px;
     }
     .h3--edition2022 .texte__colonnes--11desk{
-        margin-left: 43.6%;
+        margin-left: 41.4%;
         margin-bottom: 26px;
     }
     .h3--edition2022 .texte__colonnes--droite{
@@ -517,8 +558,10 @@ body{
     .h3--laconference .texte__colonnes--11desk{
         margin: 0;
         margin-top: 26px;
-        margin-left: 49.5%;
-        margin-right: 20%;
+        margin-left: 51%;
+        margin-right: 17%;
+        margin-bottom: 28px;
+        max-width: 60%;
     }
     .h3--laconference .first.texte__colonnes--11desk{
         margin-top: 8px;
@@ -529,18 +572,18 @@ body{
     .h3--laconference{
         display: flex;
         flex-direction: row;
-        margin: 0 0 25px 0;
+        margin: 0 0 0 0;
     }
     .h3--laconference .texte__bloc--desktop--droite{
-        margin-bottom: 1.4%;
+        margin-bottom: 22px; 
     }
     .beforeCSS{
         margin-top: 58px;
-        margin-left: 15.6%;
-        margin-bottom: 1.5%;
+        margin-left: 15.1%;
+        margin-bottom: 0;
     }
     .beforeCSS img{
-        width: 332%;
+        width: 320%;
     }
 
     .h3--amedartiste{
@@ -552,18 +595,18 @@ body{
     }
     .h3--amedartiste .bold.texte__colonnes--15desk{
         margin: 6px 0 22px 0;
-        width: 200%;
+        width: 90%;
     }
     .h3--amedartiste .texte__colonnes--11desk{
-        margin: 204px 0 0 20.3%;
-        max-width: 23.5%;
+        margin: 204px 0 0 20.6%;
+        max-width: 22.7%;
     }
     .h3--amedartiste .texte__bloc--desktop{
-        margin: 0 0 0 6.2%;
+        margin: 0 0 0 5.2%;
     }
     .firstbook img{
         width: 38vw;
-        margin: 0;
+        margin: 0px;
     }
     .h3--mavision{
         display: flex;
@@ -574,52 +617,55 @@ body{
     .h3--mavision .texte__bloc--desktop{
         display: flex;
         max-width: 100%;
-        margin-left: 15.45%;
+        margin-left: 15%;
         margin-top: 56px;
         margin-bottom: 0;
     }
     .h3--mavision .texte__colonnes--11desk{
         margin: 0;
-        max-width: 28%;
+        max-width: 27%;
         font-size: 40px;
         line-height: 1.15;
     }
     .perceval{
-        margin: 0 0 0 1.75%;
+        margin: 0 0 0 1.7%;
     }
     .perceval img{
         width: 36.5vw;
+        margin: 0 0 42px 0;
     }
     .h3--mavision .texte__colonnes--25desk{
-        margin: 48px 0 0 29.65%;
-        max-width: 50%;
+        margin: 48px 0 0 28.8%;
+        max-width: 48.5%;
         font-size: 1.44em;
     }
     .h3--monressenti{
         display: flex;
         flex-direction: row;
         margin-bottom: 19px;
+        margin-top: 58px;
     }
     .h3--monressenti .texte__bloc--desktop{
         max-width: 39.2%;
         display: flex;
         flex-direction: column;
-        margin-top: 26px;
+        margin-top: 3px;
     }
     .h3--monressenti .texte__colonnes--20desk{
-        max-width: 100%;
+        max-width: 96.5%;
         font-size: 1.44em;
+        margin-top: 4px;
     }
     .hobbit{
-        margin: 29px 0 0 1.5%;
+        margin: 29px 0 0 0.2%;
     }
     .hobbit img{
         width: 27.7vw;
 
     }
     .h3--monressenti .texte__colonnes--11desk{
-        margin: 22px 0 0 0;
-        max-width: 76%;
+        margin: 12px 3.5% 0 0;
+        max-width: 73.5%;
         font-size: 40px;
         line-height: 1.15;
         align-self: flex-end;
@@ -627,19 +673,20 @@ body{
     .h3--nouvgen{
         display: flex;
         flex-direction: row-reverse;
-        justify-content: flex-end;
+        justify-content: flex-start;
         margin-bottom: 19px;
         width: 100%;
         margin-top: 58px;
     }
     .marty{
-        margin: 0 0 0 15.5%;
+        margin: 0 2.5% 0 0;
+        justify-self: flex-start;
     }
     .marty img{
         width: 38vw;
     }
     .h3--nouvgen .texte__colonnes--20desk{
-        max-width: 100%;
+        max-width: 96%;
         font-size: 1.44em;
         margin: 29px 0 0 0;
     }
@@ -653,9 +700,10 @@ body{
     .h3--nouvgen .texte__bloc--desktop{
         display: flex;
         flex-direction: column-reverse;
-        margin-left: 25.85%;
+        margin-right: 11%;
         margin-top: 0;
         width: 100%;
+        justify-self: flex-end;
     }
     .h3--aretenir{
         display: flex;
@@ -666,22 +714,25 @@ body{
         display: flex;
         flex-direction: row-reverse;
         width: 100%;
-        max-width: 59.4%;
+        max-width: 100%;
         margin-top: 50px;
+        margin-left: 0;
     }
     .h3--aretenir .texte__colonnes--11desk{
-        margin: 50px 0 0 20.3%;
+        margin: 50px 0 0 19.8%;
         font-size: 40px;
         line-height: 1.15;
         max-width: 50%;
     }
     .h3--aretenir .texte__colonnes--10desk{
         font-size: 1.44em;
-        margin-left: 35.5%;
         margin-top: 5px;
+        margin-right: 11.1%;
+        max-width: 29.8%;
+        justify-self: flex-start;
     }
     .futur{
-        margin: 0 0 0 0.2%
+        margin: 0 20.4% 0 19.7%;
     }
     .futur img{
         width: 33.5vw;
