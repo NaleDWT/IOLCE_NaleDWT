@@ -19,13 +19,28 @@ bouttonGrille.addEventListener('click', function(){
 });
 
 
-//décallage des undeline
+//darkmode
+const bouttonDarkmode = document.querySelector('.darkboutton');
 
-/*for (let i = 2; i <= 8; i++) {
-    document.getElementById(`underline${i}`).style.marginLeft = i*"26px";
-  }*/
+var currentState = localStorage.getItem("darkmode");
+if (currentState == "off") {
+  localStorage.setItem("darkmode", "off");
+  document.body.classList.remove("dark");
+} else {
+  localStorage.setItem("darkmode", "on");
+  document.body.classList.add("dark");
+}
 
-  const underline = document.querySelectorAll('.title--underline');
-  for (let i = 1; i < underline.length; i++) {
-    underline[i].style.marginLeft = (i*"26px");
+bouttonDarkmode.addEventListener('click', function(){
+  var currentState = localStorage.getItem("darkmode");
+  if (currentState == "off") {
+    localStorage.setItem("darkmode", "on");
+    document.body.classList.add("dark");
+  } else {
+    localStorage.setItem("darkmode", "off");
+    document.body.classList.remove("dark");
   }
+
+});
+
+
