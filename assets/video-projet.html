@@ -21,31 +21,45 @@
             <li class="menu__el"><svg class="menu__burger" width="40" height="37"><g data-name="Groupe 51"><g fill="#707070" data-name="Groupe 14"><path d="M0 0h40v7H0z" data-name="Rectangle 41"/><path d="M0 15h40v7H0z" data-name="Rectangle 42"/><path d="M0 30h40v7H0z" data-name="Rectangle 43"/></g><g fill="#2c51a9" data-name="Groupe 25"><path d="M0 0h7v7H0z" data-name="Rectangle 41"/><path d="M0 15h7v7H0z" data-name="Rectangle 42"/><path d="M0 30h7v7H0z" data-name="Rectangle 43"/></g></g></svg></li>
         </ul>
         <ul class="bgmenu__nav">
-            <li class="bgmenu__el bgmenu__el--h2"><a href="#">CSS</a><span>.Day {</span></li>
-            <li class="bgmenu__el bgmenu__el--h3"><a href="#">Un évènement smart</a></li>
-            <li class="bgmenu__el bgmenu__el--h3"><a href="#">Édition 2022</a></li>
-            <li class="bgmenu__el bgmenu__el--h3"><a href="#">La conférence</a></li>
-            <li class="bgmenu__el bgmenu__el--h3"><a href="#">Une vraie âme d’artiste</a></li>
+            <li class="bgmenu__el bgmenu__el--h2 first"><a href="index.html">CSS</a><span>.Day {</span></li>
+            <li class="bgmenu__el bgmenu__el--h3"><a href="../index.html">Un évènement smart</a></li>
+            <li class="bgmenu__el bgmenu__el--h3"><a href="../index.html#edition">Édition 2022</a></li>
+            <li class="bgmenu__el bgmenu__el--h3"><a href="../index.html#conference">La conférence</a></li>
+            <li class="bgmenu__el bgmenu__el--h3"><a href="../index.html#artiste">Une vraie âme d’artiste</a></li>
+            <span class="bgmenu__el bgmenu__el--h2 fermeture">}</span>
+            <li class="bgmenu__el bgmenu__el--h2"><a href="../index.html#reflexions">Mes</a><span href="#reflexions">.réflexions {</span></li>
+            <li class="bgmenu__el bgmenu__el--h3"><a href="../index.html#reflexions">Ma vision des conférences</a></li>
+            <li class="bgmenu__el bgmenu__el--h3"><a href="../index.html#ressenti">Mon premier ressenti</a></li>
+            <li class="bgmenu__el bgmenu__el--h3"><a href="../index.html#generation">Une nouvelle génération ?</a></li>
+            <li class="bgmenu__el bgmenu__el--h3"><a href="../index.html#retenir">Les choses à bien retenir</a></li>
             <span class="bgmenu__el bgmenu__el--h2">}</span>
-            <li class="bgmenu__el bgmenu__el--h2"><a href="#">Mes</a><span>.réflexions {</span></li>
-            <li class="bgmenu__el bgmenu__el--h3"><a href="#">Ma vision des conférences</a></li>
-            <li class="bgmenu__el bgmenu__el--h3"><a href="#">Mon premier ressenti</a></li>
-            <li class="bgmenu__el bgmenu__el--h3"><a href="#">Une nouvelle génération ?</a></li>
-            <li class="bgmenu__el bgmenu__el--h3"><a href="#">Les choses à bien retenir</a></li>
-            <span class="bgmenu__el bgmenu__el--h2">}</span>
-            <li class="bgmenu__el bgmenu__el--h3"><a href="#">Vidéo du projet</a></li>
-            <li class="bgmenu__el bgmenu__el--h3"><a href="#">Mon équipe</a></li>
-            <li class="bgmenu__el bgmenu__el--h3"><a href="#">Ui-Kit</a></li>
+            <li class="bgmenu__el bgmenu__el--h3 lien first"><a href="video-projet.html"> Vidéo du projet</a></li>
+            <li class="bgmenu__el bgmenu__el--h3 lien"><a href="mon-equipe.html"> Mon équipe</a></li>
+            <li class="bgmenu__el bgmenu__el--h3 lien"><a href="ui-kit.html"> Ui-Kit</a></li>
+            <li class="bgmenu__el bgmenu__el--h3 lien"><a href="case-study.html"> Case-study</a></li>
        </ul>
     </nav>
 
     </header>
-    <main class="maincontainer">
+    <picture class="grille">
+        <source 
+                media="(max-width: 599px)" 
+                srcset="images/grille.png"
+                srcset="images/grille@2x.png 2x">
+        <source 
+                media="(min-width: 600px)" 
+                srcset="images/grille--desktop.png">
+        <img class="grille__image" src="images/grille--desktop.png">
+    </picture>
+    <main class="maincontainer videopro">
 
-        <h2 class="title title--medium">Vidéo<span>.du projet {</span></h2>
-            <p class="texte__colonnes--gauche bold">Quelques images de notre évolution dans la création de ce projet. Une façon de vous plonger avec nous dans notre travail l’espace d’un instant…</p>
-            <img class="video" src="images/loading.gif" alt="image de remplacement en attendant l'arrivé de la vidéo, le gif est un chargement en boucle...">
-        <span class="title title--medium--fermeture">}</span>
+        <h2 class="title title--medium second">Vidéo<span>.du projet {</span></h2>
+            <p class="texte__colonnes--gauche bold vid">Quelques images de notre évolution dans la création de ce projet. Une façon de vous plonger avec nous dans notre travail l’espace d’un instant…</p>
+
+            <video class="movie" width="1920" height="1080" controls>
+                <source src="images/workhard.mp4" type=video/mp4>
+            </video>        
+            <span class="title title--medium--fermeture">}</span>
     
     </main>
     <footer class="footercontainer">
@@ -56,7 +70,7 @@
             <li class="subNav__el"><a href="mon-equipe.html">Mon équipe</a></li>
         </ul>
 
-        <small class="credits"><a href="https://dwt.heaj.be/">DWT</a> - <a href="index.html">Jonathan Lemineur</a>&copy; 2022</small>
+        <small class="credits"><a href="https://dwt.heaj.be/"><svg id="a" viewBox="0 0 375 130.65"><defs></defs><path id="b" d="M0 0h29c7.16-.09 14.28.96 21.11 3.11a41.63 41.63 0 0 1 16.19 9.57 43.184 43.184 0 0 1 10.39 16.44c2.45 6.67 3.68 14.57 3.68 23.72s-1.23 17.11-3.68 23.88a45.084 45.084 0 0 1-10.31 16.77 42.046 42.046 0 0 1-15.78 9.9 59.834 59.834 0 0 1-20.29 3.27H0V0Zm27.65 87.19c3.86.05 7.7-.56 11.36-1.8a21.25 21.25 0 0 0 8.84-5.81c2.66-3.05 4.62-6.65 5.72-10.55a54.65 54.65 0 0 0 2.05-16.19c.13-5.39-.56-10.77-2.05-15.95a25.953 25.953 0 0 0-5.72-10.34 20.762 20.762 0 0 0-8.84-5.48 37.667 37.667 0 0 0-11.36-1.63h-3.44v67.72l3.44.03Z" class="g"/><path id="c" d="M88.17 0h24.54l3.43 56.76c.11 4.58.22 9.11.33 13.58s.22 9 .33 13.58h.49c.87-4.58 1.83-9.11 2.86-13.58 1.03-4.47 1.99-9 2.86-13.58l7.36-29.6h14.56l7 29.6c.87 4.37 1.8 8.84 2.78 13.42s1.91 9.16 2.79 13.74h.65c.22-4.58.36-9.13.41-13.66.05-4.53.19-9.03.41-13.5L162.08 0h22.9l-13.22 106.66h-25.19l-6.71-33.54c-.67-3.38-1.27-6.84-1.8-10.38-.55-3.55-.93-6.9-1.14-10.07h-.49c-.33 3.17-.74 6.52-1.23 10.07-.49 3.55-1.06 7-1.72 10.38l-6.38 33.54h-24.7L88.17 0Z" class="g"/><path id="d" d="M222.63 20.29h-31.9V0h88v20.29h-31.9v86.37h-24.2V20.29Z" class="g"/><path id="e" d="M302.3 106.66H375v23.99h-72.7z"/></svg></a> <a href="index.html">&copy; Jonathan Lemineur 2022</a></small>
 
     </footer>
 </body>

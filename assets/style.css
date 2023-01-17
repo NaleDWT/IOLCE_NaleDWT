@@ -23,7 +23,7 @@ body{
 }
 .grille__image{
     width: 100%;
-    height: 10383.8px;
+    height: 7765px;
 }
 .grille{
     display: none;
@@ -283,13 +283,30 @@ body{
     font-size: 25px;
     font-weight: 600;
     line-height: 60px;
-    padding: 15px 0px 0px 26px;
+    margin-left: 32px;
+}
+.bgmenu__el--h2.first{
+    margin-top: 20px;   
+}
+.bgmenu__el--h2.fermeture{
+    margin-top: 0px;
+    margin-bottom: 0px;
+    padding-top: 0;   
 }
 .bgmenu__el--h3{
     font-size: 25px;
     font-weight: 600;
     line-height: 30px;
     padding-left: 52px;
+    margin-top: 4px;
+}
+.lien{
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='32.432' height='32.434' viewBox='0 0 32.432 32.434'%3E%3Cpath id='icons8-external-link' d='M33.579 2.991a1.8 1.8 0 0 0-.2.018H24.61a1.8 1.8 0 1 0 0 3.6h4.657L12.532 23.345a1.8 1.8 0 1 0 2.547 2.547L31.814 9.156v4.657a1.8 1.8 0 1 0 3.6 0V5.038a1.8 1.8 0 0 0-1.836-2.047ZM6.6 3.008A3.629 3.629 0 0 0 3 6.61V31.822a3.629 3.629 0 0 0 3.6 3.6H31.814a3.629 3.629 0 0 0 3.6-3.6V21.017a1.8 1.8 0 1 0-3.6 0V31.822H6.6V6.61H17.407a1.8 1.8 0 1 0 0-3.6Z' transform='translate(-3 -2.99)' fill='%232c51a9'/%3E%3C/svg%3E");
+    background-repeat: no-repeat;
+    background-size: 25px;
+    background-position: 5%;
+    margin-top: 12px;
+    margin-left: 4.2%;
 }
 .bgmenu__nav{
     z-index: -10;
@@ -306,13 +323,12 @@ body{
     left: 100%;
     transition: all 0.3s cubic-bezier(0.12, 0, 0.39, 0);
     transform:  translate(0) rotate(0);
-    pointer-events: none;
 }
 .menu--open {
     transform: translateX(-100%);
     transition: all 0.3s cubic-bezier(0.12, 0, 0.39, 0);
     transform: translate(-100%) rotate(0);
-    pointer-events: none;
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 2px 16px;
 }
 
 
@@ -341,6 +357,13 @@ body{
     width: 100%;
     position: relative;
 }
+#e{
+    fill: #ffdc00;
+}
+#a{
+    /*fill: #222;*/
+    fill: rgb(255, 255, 255);
+}
 .subNav{
     padding: 0;
     list-style: none;
@@ -366,7 +389,7 @@ body{
 }
 .section__equipier{
     display: flex;
-    width: 322px;
+    width: 336px;
     height: 296px;
     background-color: #2C51A9;
     background-repeat: no-repeat;
@@ -397,13 +420,554 @@ body{
 .section__equipier--information{
     z-index: -150;
     background: linear-gradient(90deg,#2C51A9,90%,rgba(255, 255, 255, 0));
-
     flex-direction: column;
-    width: 322px;
+    width: 336px;
     height: 86.5%;
     opacity: 0.8;
 }
+.insta__logo{
+    width: 48.046px; 
+    height: 48.049px;
+}
+.twitter__logo{
+    width: 49.824px; 
+    height: 41.822px;
+    margin-top: 2px;
+}
+.credits{
+    display: flex;
+    justify-content: center;
+}
+.credits svg{
+    height: 15px;
+    margin-right: 4px;
+}
+.uikit{
+    display: flex;
+}
+.uikit .title--medium.second{
+    margin-right: 6%;
+}
+.uikit .uigrid__el--logo{
+    margin-top: 24px;
+    margin-left: 13%;
+    margin-bottom: 67px;
+}
+.uikit .uigrid__el--boutons{
+    margin-top: 32px;
+    margin-left: 10%;
+    margin-bottom: 70px;
+}
+.uikit .uigrid__el--boutons svg{
+    margin-left: 3.8%;
+}
+.uikit .title--small.ui{
+    margin-top: 8px;
+    margin-left: 6.5%;
+}
+.picto-reseaux{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-color: #2C51A9;
+    width: 35%;
+    margin: 20px 0 0 13%;
+}
+.uikit a{
+    display: block;
+    font-size: 1.2em;
+    text-decoration: underline;
+    margin-left: 13%;
+    margin-top: 20px;
+}
+.uikit .texte__equipeprojet{
+    background-color: #2C51A9;
+    width: 35%;
+    text-align: center;
+    margin-bottom: 75px;
+}
+.picto-reseaux svg{
+    margin: 6px 0 6px 0;
+}
+.uikit .title--big{
+    margin-left: 0%;
+    margin-bottom: 59px;
+}
+.uigrid .title--medium{
+    margin-left: 6.5%;
+    text-align: start;
+}
+.uigrid .title--small{
+    margin-left: 13%;  
+}
+.uigrid .title--underline{
+    margin-left: 13%;
+    margin-bottom: 76px;
+}
+
+.texte__hyperlink.ui{
+    font-size: 18px;
+    display: inline;
+    margin: 0;
+}
+.uigrid__el--paragraphes{
+    margin-top: 26px;
+    margin-left: 13%;
+}
+.casestudy .title--small.first{
+    margin-top: 32px;
+}
+.discord{
+    margin-left: 7%;
+}
+.discord img{
+    width: 87%;
+    margin-top: 45px;
+    margin-bottom: 15px;
+}
+.contraste{
+    margin-left: 7%;
+}
+.contraste img{
+    width: 87%;
+    margin-top: 30px;
+    margin-bottom: 5px;
+}
+.logoimage{
+    margin-left: 7%;
+}
+.logoimage img{
+    width: 87%;
+    margin-top: 45px;
+    margin-bottom: 15px;
+}
+.layout{
+    margin-left: 7%;
+}
+.layout img{
+    width: 87%;
+    margin-top: 45px;
+    margin-bottom: 15px;
+}
+.hackeur{
+    margin-left: 7%;
+}
+.hackeur img{
+    width: 87%;
+    margin-top: 45px;
+    margin-bottom: 15px;
+}
+.lagrille{
+    margin-left: 7%;
+}
+.lagrille img{
+    width: 87%;
+    margin-top: 45px;
+    margin-bottom: 15px;
+}
+.casestudy .texte__colonnes--gauche{
+    margin-left: 7%;
+}
+.movie{
+    width: 96%;
+    height: auto;
+    margin-left: 0%;
+    margin-top: 25px;
+}
+.videopro{
+    width: 92%;
+}
+
+
 @media (min-width: 600px) {
+    .menu__liste{
+        width: 19%;
+    }
+    body{
+        font-size: 16px;
+        height: 100%;
+        max-width: 100%;
+        line-height: 1.223809;
+    }
+    .maincontainer{
+        margin: 0px 2.92%;
+        max-width: 94%;
+    }
+    .grille__image{
+        width: 100%;
+        height: 7494.505041246562786px;
+
+    }
+    .bgmenu__el--h2{
+        font-size: 25px;
+        font-weight: 600;
+        line-height: 60px;
+        margin-left: 32px;
+        margin-top: 60px;
+    }
+    .bgmenu__el--h2.first{
+        margin-top: 22px;   
+    }
+
+    .bgmenu__el--h3{
+        font-size: 25px;
+        font-weight: 600;
+        line-height: 30px;
+        padding-left: 52px;
+        margin-top: 4px;
+    }
+    .lien.first{
+        margin-top: 60px;
+    }
+    .title--big{
+        font-size: 4.8335em;
+        margin-top: 40px;
+        margin-left: 20.5%;
+    }
+    .title--small.first{
+        margin-top: 29px;
+    }
+    .title--small{
+        font-size: 2.0466em;
+        margin-left: 9.2%;
+        margin-top: 10px;
+    }
+    .title--underline{
+        margin-left: 9.2%;
+        margin-bottom: 0.2%;
+    }
+    .title--medium.second{
+        font-size: 3.1452em;
+        margin-top: 95px;
+        margin-right: 20.5%;
+        text-align: end;
+    }
+    .title--medium.first{
+        font-size: 3.1452em;
+        margin-top: 107px;
+        margin-right: 20.5%;
+        text-align: end;
+    }
+    .title--medium--fermeture{
+        font-size: 3.1452em;
+        margin-top: 50px;
+    }
+    .texte__colonnes--gauche.first{
+        margin: 37px 0 0 20.4%;
+    }
+    .texte__colonnes--gauche{
+        font-size: 1.331716em;
+        max-width: 70%;
+        margin: 0 0 0 20.4%;
+    }
+    .texte__colonnes--centre{
+        font-size: 1.331716em;
+        max-width: 79.8%;
+        margin: 38px 0 0 0;
+    }
+    .texte__colonnes--gauche.doublep{
+        margin: 28px 0 0 20.4%;
+    }
+    .webisdone img{
+        width: 70.5%;
+        margin: 48px 0 8px 0;
+    }
+    .webisdone{
+        margin: 0 0 0 20.4%;
+    }
+    .h3--unevenementsmart{
+        margin-bottom: 121px;
+    }
+    .texte__colonnes--droite.first{
+        margin: 37px 0 0 20.4%;
+    }
+    .texte__colonnes--droite{
+        font-size: 1.331716em;
+        max-width: 70%;
+        margin: 0 0 0 20.4%;
+    }
+    .texte__colonnes--droite.doublep{
+        margin: 28px 0 0 20.4%;
+    }
+    .simpson img{
+        width: 142.2%;
+        margin: 48px 0 0 0;
+    }
+    .simpson{
+        margin: 0 0 115px 20.4%;
+    }
+    .h3--edition2022{
+        max-height: none;
+    }
+    .h3--laconference .texte__colonnes--gauche.first{
+        margin: 37px 0 0 9.2%;
+    }
+    .h3--laconference .texte__colonnes--gauche{
+        margin: 0 0 0 9.2%;
+    }
+    .h3--laconference .texte__colonnes--gauche.doublep{
+        margin: 28px 0 0 9.2%;
+    }
+    .beforeCSS img{
+        width: 144%;
+    }
+    .beforeCSS{
+        margin-left: 8.5%;
+        margin-top: 38px;
+        margin-bottom: 86px;
+    }
+    .firstbook img{
+        width: 70%;
+        margin-top: 22px;
+        margin-bottom: 20px;
+    }
+    .firstbook{
+        margin-left: 20.3%;
+    }
+    .perceval img{
+        width: 79.7%;
+        margin-top: 22px;
+        margin-bottom: 32px;
+    }
+    .h3--mavision .texte__colonnes--25desk{
+        margin: 9px 0 0 0;
+        max-width: 79.8%;
+    }
+    .h3--mavision{
+        margin-bottom: 116px;
+        margin-left: 9.2%;
+    }
+    .h3--monressenti .texte__colonnes--20desk{
+        margin-top: 38px;
+    }
+    .h3--monressenti .texte__colonnes--11desk{
+        margin-top: 30px;
+    }
+    .hobbit img{
+        width: 142%;
+        margin-top: 20px;
+    }
+    .hobbit{
+        margin-left: 20.5%;
+    }
+    .h3--monressenti{
+        margin-bottom: 118px;
+    }
+    .h3--nouvgen{
+        margin-bottom: 110px;
+    }
+    .h3--nouvgen .texte__colonnes--20desk{
+        margin-top: 39px;
+        margin-left: 0;
+    }
+    .h3--nouvgen .doublep.texte__colonnes--11desk{
+        margin-top: 29px;
+        margin-left: 0;
+    }
+    .marty img{
+        width: 71.5%;
+        margin-top: 20px;
+    }
+    .marty{
+        margin-left: 0%;
+    }
+    .h3--aretenir .texte__colonnes--10desk{
+        max-width: 79.8%;
+        margin-left: 8.5%;
+        margin-top: 35px;
+    }
+    .h3--aretenir .texte__colonnes--11desk{
+        max-width: 79.8%;
+        margin-left: 8.5%;
+        margin-top: 0;
+    }
+    .futur img{
+        width: 79.5%;
+        margin-left: 8.5%;
+        margin-top: 32px;
+    }
+    .maincontainer__equipe{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 150px 350px 350px auto;
+        grid-gap: 1%;
+    }
+    .maincontainer__equipe .title--medium.second{
+        margin-right: 0;
+        margin-left: 0;
+        margin-top: 64px;
+        grid-column: 2;
+        grid-row: 1;
+    }
+    .section__equipier{
+        width: 92%;
+        height: auto;
+        margin-bottom: 0;
+    }
+    .section__equipier--kesily{
+        margin-top: 0;
+        margin-right: 0%;
+        grid-column: 1;
+        grid-row: 2;
+    }
+    .section__equipier--thibaud{
+        grid-column: 2;
+        grid-row: 2;
+    }
+    .section__equipier--mika{
+        grid-column: 1;
+        grid-row: 3;
+    }
+    .section__equipier--jonathan{
+        grid-column: 2;
+        grid-row: 3;
+    }
+    .maincontainer__equipe .title--medium--fermeture{
+        grid-column: 1;
+        grid-row: 4;
+    }
+    .section__equipier--information{
+        width: 100%;
+        height: 86.5%;
+    }
+    .section__equipier--information{
+        height: 100%;
+    }
+    .equipier__description{
+        height: 40%;
+    }
+    .credits{
+        display: flex;
+        justify-content: center;
+    }
+    .credits svg{
+        height: 15px;
+    }
+    .uikit .title--medium.second{
+        margin-top: 89px;
+    }
+    .uigrid .title--small.ui{
+        margin-left: 9.4%;  
+    }
+    .uigrid .title--small.ui.first{
+        margin-top: 29px;  
+    }
+    .uikit .uigrid__el--logo{
+        margin-top: 24px;
+        margin-left: 15.6%;
+        margin-bottom: 68px;
+    }
+    .uikit .uigrid__el--boutons{
+        margin-top: 34px;
+        margin-left: 12.4%;
+        margin-bottom: 72.4px;
+    }
+    .picto-reseaux{
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        background-color: #2C51A9;
+        width: 23.5%;
+        margin: 20px 0 0 15.6%;
+    }
+    .uikit a{
+        margin-left: 15.6%;
+        margin-top: 27px;
+    }
+    .uikit .texte__equipeprojet{
+        background-color: #2C51A9;
+        width: 23.5%;
+        text-align: center;
+        margin-bottom: 77px;
+        margin-top: 24px;
+    }
+    .title--small.alone{
+        margin-left: 15.5%;
+    }
+    .uigrid .title--underline{
+        margin-left: 15.5%;
+        margin-bottom: 82px;
+    }
+    .uigrid .title--big{
+        max-width: 80%;
+        margin-left: 15.5%;
+        margin-top: 33px;
+        margin-bottom: 22px;
+    }
+    .uigrid .title--medium.second{
+        margin-left: 15.5%;
+        text-align: start;
+        margin-top: 0px;
+        margin-bottom: 42px;
+    }
+    .uigrid__el--paragraphes .texte__colonnes--gauche.doublep{
+        margin-left: 3%;
+    }
+    .casestudy .title--medium.second{
+        margin-top: 89px;
+        margin-right: 6%;
+    }
+    .casestudy .title--small.case{
+        margin-left: 9.4%;  
+    }
+    .casestudy .title--small.case.first{
+        margin-top: 29px;  
+    }
+
+    .case{
+        margin-left: 9.4%;
+    }
+    .case img{
+        margin-top: 48px;
+        width: 75%;
+    }
+    .casestudy .texte__colonnes--gauche{
+        margin-left: 9.4%;
+        max-width: 75%;
+        margin-top: 22px;
+        margin-bottom: 115px;
+    }
+    .contraste img{
+        margin-top: 88px;
+    }
+    .logoimage img{
+        margin-top: 54px;
+    }
+    .layout img{
+        margin-bottom: 32px;
+    }
+    .lagrille img{
+        margin-top: 45px;
+        margin-bottom: 34px;
+    }
+    .discord img{
+        margin-bottom: 20px;
+    }
+    .hackeur img{
+        margin-bottom: 22px;
+    }
+    .videopro .title--medium.second{
+        margin-top: 89px;
+        margin-right: 5.8%;
+    }
+    .videopro .texte__colonnes--gauche{
+        margin-left: 9.4%;
+        max-width: 50%;
+        margin-top: 38px;
+    }
+    .movie{
+        width: 78%;
+        height: auto;
+        margin-left: 9.4%;
+        margin-top: 50px;
+    }
+    .videopro{
+        width: 100%;
+    }    
+
+
+
+
 
 }
 
@@ -428,7 +992,7 @@ body{
     }
     .title--small{
         font-size: 2.4883em;
-        margin-left: 12.5%;
+        margin-left: 12.2%;
         margin-top: 135px;
     }
     .title--underline{
@@ -464,7 +1028,8 @@ body{
 
     .grille__image{
         width: 100%;
-        height: 8728px;
+        /*height: 8728px;*/
+        height: 7948px;
     }
     .grille{
         display: none;
@@ -484,9 +1049,6 @@ body{
     .menu{
         padding: 0px 2.92%;
     }
-    .texte__colonnes--gauche{
-        margin: 0;
-    }
 
     .texte__colonnes--15desk{
         font-size: 1.44em;
@@ -499,6 +1061,9 @@ body{
 
     .h3--unevenementsmart{
         display: flex;
+        margin: 0;
+    }
+    .h3--unevenementsmart .texte__colonnes--15desk{
         margin: 0;
     }
     .texte__bloc--desktop p{
@@ -515,6 +1080,7 @@ body{
     }
     .webisdone img {
         /*00width: 152%;*/
+        margin: 0;
         width: 27.8vw;
         margin-bottom: 26px;
     }
@@ -523,6 +1089,7 @@ body{
         flex-direction: row;
         margin: 0;
     }
+
     #replacement__ordre{
         order: 1;
     }
@@ -531,9 +1098,9 @@ body{
         order: 2;
     }
     .simpson{
-        margin-top: 56px;
+        margin-top: 8px;
         margin-left: 13.4%;
-        margin-bottom: 18px;
+        margin-bottom: 22px;
     }
     .simpson img{
         width: 262%;
@@ -546,7 +1113,20 @@ body{
         margin-top: 0;
     }
     .h3--edition2022{
-        margin-bottom: 5px;
+        margin-bottom: 0px;
+        
+    }
+    .h3--laconference .texte__colonnes--gauche.first{
+        margin: 0 0 0 46.8%;
+        max-width: 36%;
+    }
+    .h3--laconference .texte__colonnes--gauche{
+        max-width: 36%;
+        margin: 0 0 0 46.8%;
+    }
+    .h3--laconference .texte__colonnes--gauche.doublep{
+        margin: 0 0 0 46.8%;
+        max-width: 36%;
     }
     .h3--edition2022 .texte__colonnes--11desk{
         margin-left: 41.4%;
@@ -598,11 +1178,14 @@ body{
         width: 90%;
     }
     .h3--amedartiste .texte__colonnes--11desk{
-        margin: 204px 0 0 20.6%;
+        margin: 204px 0 0 19.8%;
         max-width: 22.7%;
     }
     .h3--amedartiste .texte__bloc--desktop{
-        margin: 0 0 0 5.2%;
+        margin: 0 0 0 5.9%;
+    }
+    .firstbook{
+        margin: 0;
     }
     .firstbook img{
         width: 38vw;
@@ -613,6 +1196,7 @@ body{
         flex-direction: column;
         width: 100%;
         margin-bottom: 21px;
+        margin-left: 0;
     }
     .h3--mavision .texte__bloc--desktop{
         display: flex;
@@ -655,13 +1239,14 @@ body{
         max-width: 96.5%;
         font-size: 1.44em;
         margin-top: 4px;
+        margin-left: 0;
     }
     .hobbit{
-        margin: 29px 0 0 0.2%;
+        margin: 0 0 0 0.2%;
     }
     .hobbit img{
         width: 27.7vw;
-
+        margin: 0;
     }
     .h3--monressenti .texte__colonnes--11desk{
         margin: 12px 3.5% 0 0;
@@ -679,14 +1264,14 @@ body{
         margin-top: 58px;
     }
     .marty{
-        margin: 0 2.5% 0 0;
+        margin: 0 5.4% 0 0;
         justify-self: flex-start;
     }
     .marty img{
         width: 38vw;
     }
     .h3--nouvgen .texte__colonnes--20desk{
-        max-width: 96%;
+        max-width: 100%;
         font-size: 1.44em;
         margin: 29px 0 0 0;
     }
@@ -700,7 +1285,7 @@ body{
     .h3--nouvgen .texte__bloc--desktop{
         display: flex;
         flex-direction: column-reverse;
-        margin-right: 11%;
+        margin-right: 8.9%;
         margin-top: 0;
         width: 100%;
         justify-self: flex-end;
@@ -722,21 +1307,272 @@ body{
         margin: 50px 0 0 19.8%;
         font-size: 40px;
         line-height: 1.15;
-        max-width: 50%;
+        max-width: 48.5%;
     }
     .h3--aretenir .texte__colonnes--10desk{
         font-size: 1.44em;
         margin-top: 5px;
-        margin-right: 11.1%;
-        max-width: 29.8%;
+        margin-right: 11.9%;
+        margin-left: 21%;
+        max-width: 29%;
         justify-self: flex-start;
     }
     .futur{
-        margin: 0 20.4% 0 19.7%;
+        margin: 0 0% 0 19.7%;
     }
     .futur img{
+        margin: 0;
         width: 33.5vw;
     }
+    .maincontainer__equipe .title--medium.second{
+        margin-top: 30px;
+        text-align: start;
+    }
+    .maincontainer__equipe{
+        grid-template-rows: 150px 600px 600px auto;
+    }
+    .section__equipier--kesily{
+        background-size: 50%;
+    }
+    .section__equipier--thibaud{
+        background-size: 30%;
+    }
+    .section__equipier--mika{
+        background-size: 30%;
+    }
+    .section__equipier--jonathan{
+        background-size: 50%;
+    }
+    .equipier__nom{
+        font-size: 2.4883em;
+        margin-top: 10px;    
+    }
+    .equipier__description{
+        font-size: 1.44em;
+        max-width: 35%;
+        margin-top: 22px;
+        margin-left: 5%;    
+
+    }
+    .texte__equipeprojet{
+        font-size: 1.44em;
+        margin-left: 5%;    
+    }
+    .reseaux{
+        margin-top: 30px;
+        margin-left: 5%;    
+
+    }
+    .footercontainer{
+        display: grid;
+        grid-template-columns: 1fr 2.5fr;
+        /*flex-direction: row;
+        align-items: center;
+        justify-content: flex-start;*/
+    }
+    .subNav{
+        justify-self: flex-start;
+        margin-left: 3%;
+        width: 100%;
+    }
+    .subNav__el{
+        margin-top: 18px;
+        font-size: 1.2em;
+        margin-right: 5px;
+        min-width: 0%;
+    }
+    .credits{
+        margin-top: 36px;
+        margin-left: 22%;
+        display: flex;
+        font-size: 1em;
+        justify-content: flex-start;
+    }
+    .credits svg{
+        height: 18px;
+    }
+    .uikit .title--medium.second{
+        margin-top: 89px;
+    }
+    .uigrid .title--small.ui{
+        margin-left: 12%;
+        margin-top: 45px;  
+    }
+    .uigrid__droite .title--small.ui{
+        margin-left: 4.8%;
+    }
+    .uigrid .title--small.ui.first{
+        margin-top: 45px;  
+    }
+    .uikit .uigrid__el--logo{
+        margin-top: 28px;
+        margin-left: 24%;
+        margin-bottom: 96px;
+    }
+    .uikit .uigrid__el--boutons{
+        margin-top: 36px;
+        margin-left: 21%;
+        margin-bottom: 101px;
+    }
+    .picto-reseaux{
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        background-color: #2C51A9;
+        width: 30%;
+        margin: 20px 0 0 24%;
+    }
+    .uikit a{
+        margin-left: 24%;
+        margin-top: 35px;
+    }
+    .uikit .texte__equipeprojet{
+        background-color: #2C51A9;
+        width: 30%;
+        text-align: center;
+        margin-bottom: 77px;
+        margin-top: 24px;
+    }
+    .title--small.alone{
+        margin-left: 9%;
+        margin-top: 0;
+    }
+    .uigrid .title--underline{
+        margin-left: 9%;
+        margin-bottom: 110px;
+    }
+    .uigrid .title--big{
+        max-width: 80%;
+        margin-left: 9%;
+        margin-top: 58px;
+        margin-bottom: 42px;
+    }
+    .uigrid .title--medium.second{
+        margin-left: 9%;
+        text-align: start;
+        margin-top: 0px;
+        margin-bottom: 60px;
+    }
+    .uigrid__el--paragraphes .texte__colonnes--gauche.doublep{
+        margin-left: 0%;
+    }
+    .uigrid__el--paragraphes{
+        margin-top: 58px;
+        margin-left: 9%;
+    }
+
+    .texte__hyperlink.ui{
+        font-size: 21px;
+    }
+    .uigrid .texte__colonnes--gauche.doublep.bloquote{
+        font-weight: 800;
+        font-size: 40px;
+        margin-top: 40px;
+        margin-bottom: 32px;
+    }
+    .uigrid{
+        display: grid;
+        grid-template-columns:  1fr 3fr;
+    }
+    .uigrid__droite{
+        grid-column: 2;
+    }
+
+
+    .casestudy .title--medium.second{
+        margin-top: 86px;
+        margin-right: 6%;
+    }
+    .casestudy .title--small.case{
+        margin-left: 12.1%;  
+    }
+    .casestudy .title--small.case.first{
+        margin-top: 49px;  
+    }
+
+    .case{
+        margin-left: 19.7%;
+    }
+    .case img{
+        margin-top: 48px;
+        width: 57.6%;
+    }
+    .casestudy .texte__colonnes--gauche{
+        margin-left: 19.7%;
+        max-width: 37.9%;
+        margin-top: 22px;
+        margin-bottom: 21px;
+        font-size: 1.423828125em;
+    }
+    .casestudy .texte__colonnes--gauche.droite{
+        margin-left: 39.4%;
+    }
+    .contraste img{
+        margin-top: 88px;
+        margin-bottom: 30px
+    }
+    .logoimage img{
+        margin-top: 46px;
+    }
+    .layout img{
+        margin-bottom: 41px;
+        width: 37.9%;
+    }
+    .lagrille img{
+        margin-top: 47px;
+        margin-bottom: 44px;
+        width: 37.9%;
+    }
+    .discord img{
+        margin-bottom: 42px;
+    }
+    .hackeur img{
+        margin-bottom: 42px;
+    }
+    .menu--open{
+        width: 40%;
+    }
+    .bgmenu__el--h3{
+        padding: 0;
+        margin-left: 22.8%;
+        margin-top: 15px;
+    }
+    .bgmenu__el--h2{
+        margin-top: 8px;
+        margin-left: 15%;
+    }
+    .bgmenu__el--h2.first{
+        margin-top: 18px;
+    }
+    .bgmenu__el{
+        font-size: 30px;
+    }
+    .lien{
+        background-position: 0%;
+    }
+    .lien a{
+        margin-left: 8%;
+    }
+    .bgmenu__el--h3.first{
+        margin-top: 22px;
+    }
+    .videopro .title--medium.second{
+        margin-top: 86px;
+    }
+    .videopro .texte__colonnes--gauche{
+        margin-left: 19.7%;
+        max-width: 30%;
+        margin-top: 67px;
+    }
+    .movie{
+        width: 68.2%;
+        height: auto;
+        margin-left: 19.7%;
+        margin-top: 50px;
+    }       
+
+
+    
     
 
 }

@@ -21,21 +21,22 @@
             <li class="menu__el"><svg class="menu__burger" width="40" height="37"><g data-name="Groupe 51"><g fill="#707070" data-name="Groupe 14"><path d="M0 0h40v7H0z" data-name="Rectangle 41"/><path d="M0 15h40v7H0z" data-name="Rectangle 42"/><path d="M0 30h40v7H0z" data-name="Rectangle 43"/></g><g fill="#2c51a9" data-name="Groupe 25"><path d="M0 0h7v7H0z" data-name="Rectangle 41"/><path d="M0 15h7v7H0z" data-name="Rectangle 42"/><path d="M0 30h7v7H0z" data-name="Rectangle 43"/></g></g></svg></li>
         </ul>
         <ul class="bgmenu__nav">
-            <li class="bgmenu__el bgmenu__el--h2"><a href="#">CSS</a><span>.Day {</span></li>
-            <li class="bgmenu__el bgmenu__el--h3"><a href="#">Un évènement smart</a></li>
-            <li class="bgmenu__el bgmenu__el--h3"><a href="#">Édition 2022</a></li>
-            <li class="bgmenu__el bgmenu__el--h3"><a href="#">La conférence</a></li>
-            <li class="bgmenu__el bgmenu__el--h3"><a href="#">Une vraie âme d’artiste</a></li>
+            <li class="bgmenu__el bgmenu__el--h2 first"><a href="index.html">CSS</a><span>.Day {</span></li>
+            <li class="bgmenu__el bgmenu__el--h3"><a href="index.html">Un évènement smart</a></li>
+            <li class="bgmenu__el bgmenu__el--h3"><a href="#edition">Édition 2022</a></li>
+            <li class="bgmenu__el bgmenu__el--h3"><a href="#conference">La conférence</a></li>
+            <li class="bgmenu__el bgmenu__el--h3"><a href="#artiste">Une vraie âme d’artiste</a></li>
+            <span class="bgmenu__el bgmenu__el--h2 fermeture">}</span>
+            <li class="bgmenu__el bgmenu__el--h2"><a href="#reflexions">Mes</a><span href="#reflexions">.réflexions {</span></li>
+            <li class="bgmenu__el bgmenu__el--h3"><a href="#reflexions">Ma vision des conférences</a></li>
+            <li class="bgmenu__el bgmenu__el--h3"><a href="#ressenti">Mon premier ressenti</a></li>
+            <li class="bgmenu__el bgmenu__el--h3"><a href="#generation">Une nouvelle génération ?</a></li>
+            <li class="bgmenu__el bgmenu__el--h3"><a href="#retenir">Les choses à bien retenir</a></li>
             <span class="bgmenu__el bgmenu__el--h2">}</span>
-            <li class="bgmenu__el bgmenu__el--h2"><a href="#">Mes</a><span>.réflexions {</span></li>
-            <li class="bgmenu__el bgmenu__el--h3"><a href="#">Ma vision des conférences</a></li>
-            <li class="bgmenu__el bgmenu__el--h3"><a href="#">Mon premier ressenti</a></li>
-            <li class="bgmenu__el bgmenu__el--h3"><a href="#">Une nouvelle génération ?</a></li>
-            <li class="bgmenu__el bgmenu__el--h3"><a href="#">Les choses à bien retenir</a></li>
-            <span class="bgmenu__el bgmenu__el--h2">}</span>
-            <li class="bgmenu__el bgmenu__el--h3"><a href="#">Vidéo du projet</a></li>
-            <li class="bgmenu__el bgmenu__el--h3"><a href="#">Mon équipe</a></li>
-            <li class="bgmenu__el bgmenu__el--h3"><a href="#">Ui-Kit</a></li>
+            <li class="bgmenu__el bgmenu__el--h3 lien first"><a href="assets/video-projet.html"> Vidéo du projet</a></li>
+            <li class="bgmenu__el bgmenu__el--h3 lien"><a href="assets/mon-equipe.html"> Mon équipe</a></li>
+            <li class="bgmenu__el bgmenu__el--h3 lien"><a href="assets/ui-kit.html"> Ui-Kit</a></li>
+            <li class="bgmenu__el bgmenu__el--h3 lien"><a href="assets/case-study.html"> Case-study</a></li>
        </ul>
     </nav>
 
@@ -43,11 +44,11 @@
 
     <picture class="grille">
         <source 
-                media="(max-width: 1199px)" 
+                media="(max-width: 599px)" 
                 srcset="assets/images/grille.png"
                 srcset="assets/images/grille@2x.png 2x">
         <source 
-                media="(min-width: 1200px)" 
+                media="(min-width: 600px)" 
                 srcset="assets/images/grille--desktop.png">
         <img class="grille__image" src="assets/images/grille--desktop.png">
     </picture>
@@ -57,6 +58,7 @@
 
         <h2 class="title title--medium first">CSS<span>.Day&nbsp{</span></h2>
 
+            <a name="evenement"></a>
             <h3 class="title title--small first">Un&nbspévènement&nbspsmart</h3>
             <div class="title title--underline" id="underline1"></div>
 
@@ -68,9 +70,12 @@
                     </div>
                     <picture class="image__colonnes--gauche webisdone">
                         <source 
-                                media="(max-width: 1199px)" 
+                                media="(max-width: 599px)" 
                                 srcset="assets/images/website-is-done-meme.png"
                                 srcset="assets/images/website-is-done-meme@2x.png 2x">
+                        <source 
+                                media="(max-width: 1199px)" 
+                                srcset="assets/images/website-is-done-meme-tablette.png">
                         <source 
                                 media="(min-width: 1200px)" 
                                 srcset="assets/images/website-is-done-meme-desktop.png">
@@ -79,6 +84,7 @@
 
             </section>
 
+            <a name="edition"></a>
             <h3 class="title title--small">Édition 2022</h3>
             <div class="title title--underline" id="underline2"></div>
 
@@ -90,9 +96,12 @@
                 </div>
                 <picture class="image__colonnes--droite simpson">
                     <source 
-                            media="(max-width: 1199px)" 
+                            media="(max-width: 599px)" 
                             srcset="assets/images/meme-simpson.png"
                             srcset="assets/images/meme-simpson@2x.png 2x">
+                    <source 
+                            media="(max-width: 1199px)" 
+                            srcset="assets/images/meme-simpson-tablette.png">
                     <source 
                             media="(min-width: 1200px)" 
                             srcset="assets/images/meme-simpson-desktop.png"
@@ -102,6 +111,7 @@
 
             </section>
 
+            <a name="conference"></a>
             <h3 class="title title--small">La conférence</h3>
             <div class="title title--underline" id="underline3"></div>
             
@@ -114,9 +124,12 @@
                     </div>
                     <picture class="image__colonnes--gauche beforeCSS">
                         <source 
-                                media="(max-width: 1199px)" 
+                                media="(max-width: 599px)" 
                                 srcset="assets/images/beforeCSS.png"
                                 srcset="assets/images/beforeCSS@2x.png 2">
+                        <source 
+                                media="(max-width: 1199px)" 
+                                srcset="assets/images/beforeCSS-tablette.png">
                         <source 
                                 media="(min-width: 1200px)" 
                                 srcset="assets/images/beforeCSS-desktop.png">
@@ -125,6 +138,7 @@
 
                 </section>
 
+            <a name="artiste"></a>
             <h3 class="title title--small">Une vraie âme d’artiste</h3>
             <div class="title title--underline" id="underline4"></div>
 
@@ -134,9 +148,12 @@
                     
                     <picture class="image__colonnes--gauche firstbook">
                         <source 
-                                media="(max-width: 1199px)" 
+                                media="(max-width: 599px)" 
                                 srcset="assets/images/first-book.png"
                                 srcset="assets/images/first-book@2x.png 2">
+                        <source 
+                                media="(max-width: 1199px)" 
+                                srcset="assets/images/first-book-tablette.png">
                         <source 
                                 media="(min-width: 1200px)" 
                                 srcset="assets/images/first-book-desktop.png">
@@ -148,9 +165,11 @@
                 </section>
 
         <span class="title title--medium--fermeture">}</span>
+        <a name="reflexions"></a>
 
         <h2 class="title title--medium second">Mes<span>.réflexions&nbsp{</span></h2>
 
+            <a name="vision"></a>
             <h3 class="title title--small first">Ma&nbspvision&nbspdes&nbspconférences</h3>
             <div class="title title--underline" id="underline5"></div>
 
@@ -159,9 +178,12 @@
                 <p class="texte__colonnes--centre first bold texte__colonnes--11desk">Les conférences, n’étant pas un format que j’affectionnais réellement ou auquel je m’étais intéressé, m’ont d’abord laissé légèrement réticent à l’idée de les visionner.</p>
                 <picture class="image__colonnes--centre perceval">
                     <source 
-                            media="(max-width: 1199px)" 
+                            media="(max-width: 599px)" 
                             srcset="assets/images/percevalraclette.png"
                             srcset="assets/images/percevalraclette@2x.png 2x">
+                    <source 
+                            media="(max-width: 1199px)" 
+                            srcset="assets/images/percevalraclette-tablette.png">
                     <source 
                             media="(min-width: 1200px)" 
                             srcset="assets/images/percevalraclette-desktop.png">
@@ -171,6 +193,7 @@
                 <p class="texte__colonnes--droite doublep texte__colonnes--25desk">À la lecture de cette première d’une longue série, j’ai acquis un nombre de connaissances supérieur à ce que j’aurais pu lire sur internet en l’espace du même temps. Une heure a donc suffi à changer ma vision de ce mot “conférence“. Jeremy Keith n’y est évidemment pas pour rien, il a su capter mon attention dès le début de sa présentation en abordant la théorie de l’information de Shannon. Une représentation qui résume efficacement les parties fondamentales de l’information, l’émetteur, le signal, le récepteur et inévitablement le bruit. Internet se résume un peu de cette façon pour moi avec cet ensemble de signaux qui circulent constamment.</p>
             </section>
 
+            <a name="ressenti"></a>
             <h3 class="title title--small">Mon premier ressenti</h3>
             <div class="title title--underline" id="underline6"></div>
 
@@ -182,9 +205,12 @@
                 </div>
                 <picture class="image__colonnes--gauche hobbit">
                     <source 
-                            media="(max-width: 1199px)" 
+                            media="(max-width: 599px)" 
                             srcset="assets/images/memehobbit.png"
                             srcset="assets/images/memehobbit@2x.png 2x">
+                    <source 
+                            media="(max-width: 1199px)" 
+                            srcset="assets/images/memehobbit-tablette.png">
                     <source 
                             media="(min-width: 1200px)" 
                             srcset="assets/images/memehobbit-desktop.png">
@@ -192,6 +218,7 @@
                 </picture>
             </section>
 
+            <a name="generation"></a>
             <h3 class="title title--small">Une&nbspnouvelle&nbspgénération&nbsp?</h3>
             <div class="title title--underline" id="underline7"></div>
 
@@ -203,9 +230,12 @@
                 </div>
                 <picture class="image__colonnes--droite marty">
                     <source 
-                            media="(max-width: 1199px)" 
+                            media="(max-width: 599px)" 
                             srcset="assets/images/vitemartymonte.png"
                             srcset="assets/images/vitemartymonte@2x.png 2x">
+                    <source 
+                            media="(max-width: 1199px)" 
+                            srcset="assets/images/vitemartymonte-tablette.png">
                     <source 
                             media="(min-width: 1200px)" 
                             srcset="assets/images/vitemartymonte-desktop.png">
@@ -213,6 +243,7 @@
                 </picture>
             </section>
 
+            <a name="retenir"></a>
             <h3 class="title title--small">Les&nbspchoses à&nbspbien&nbspretenir</h3>
             <div class="title title--underline" id="underline8"></div>
 
@@ -221,9 +252,12 @@
                 <p class="texte__colonnes--gauche texte__colonnes--10desk">Durant ce qui s’apparente à une conclusion de cette conférence Jeremy Keith insiste sur le fait que nos préoccupations se tournent trop vers ici et maintenant. Tout comme nos prédécesseurs l’ont été pour nous offrir ce monde du web actuel, nous sommes l’avenir de ce monde et selon lui, nous devons nous tourner vers le passé pour pouvoir nous tourner vers notre futur. </p>
                 <picture class="image__colonnes--gauche futur">
                     <source 
-                            media="(max-width: 1199px)" 
+                            media="(max-width: 599px)" 
                             srcset="assets/images/avenirfnf.png"
                             srcset="assets/images/avenirfnf@2x.png 2x">
+                    <source 
+                            media="(max-width: 1199px)" 
+                            srcset="assets/images/avenirfnf-tablette.png">
                     <source 
                             media="(min-width: 1200px)" 
                             srcset="assets/images/avenirfnf-desktop.png">
@@ -244,7 +278,7 @@
         <li class="subNav__el"><a href="assets/video-projet.html">Vidéo du projet</a></li>
     </ul>
 
-    <small class="credits"><a href="https://dwt.heaj.be/">DWT</a> — <a href="index.html">&copy; Jonathan Lemineur</a>2022</small>
+    <small class="credits"><a href="https://dwt.heaj.be/"><svg id="a" viewBox="0 0 375 130.65"><defs></defs><path id="b" d="M0 0h29c7.16-.09 14.28.96 21.11 3.11a41.63 41.63 0 0 1 16.19 9.57 43.184 43.184 0 0 1 10.39 16.44c2.45 6.67 3.68 14.57 3.68 23.72s-1.23 17.11-3.68 23.88a45.084 45.084 0 0 1-10.31 16.77 42.046 42.046 0 0 1-15.78 9.9 59.834 59.834 0 0 1-20.29 3.27H0V0Zm27.65 87.19c3.86.05 7.7-.56 11.36-1.8a21.25 21.25 0 0 0 8.84-5.81c2.66-3.05 4.62-6.65 5.72-10.55a54.65 54.65 0 0 0 2.05-16.19c.13-5.39-.56-10.77-2.05-15.95a25.953 25.953 0 0 0-5.72-10.34 20.762 20.762 0 0 0-8.84-5.48 37.667 37.667 0 0 0-11.36-1.63h-3.44v67.72l3.44.03Z" class="g"/><path id="c" d="M88.17 0h24.54l3.43 56.76c.11 4.58.22 9.11.33 13.58s.22 9 .33 13.58h.49c.87-4.58 1.83-9.11 2.86-13.58 1.03-4.47 1.99-9 2.86-13.58l7.36-29.6h14.56l7 29.6c.87 4.37 1.8 8.84 2.78 13.42s1.91 9.16 2.79 13.74h.65c.22-4.58.36-9.13.41-13.66.05-4.53.19-9.03.41-13.5L162.08 0h22.9l-13.22 106.66h-25.19l-6.71-33.54c-.67-3.38-1.27-6.84-1.8-10.38-.55-3.55-.93-6.9-1.14-10.07h-.49c-.33 3.17-.74 6.52-1.23 10.07-.49 3.55-1.06 7-1.72 10.38l-6.38 33.54h-24.7L88.17 0Z" class="g"/><path id="d" d="M222.63 20.29h-31.9V0h88v20.29h-31.9v86.37h-24.2V20.29Z" class="g"/><path id="e" d="M302.3 106.66H375v23.99h-72.7z"/></svg></a> <a href="index.html">&copy; Jonathan Lemineur 2022</a></small>
 
     </footer>
 </body>
